@@ -24,8 +24,11 @@ export function ThisWeek() {
                     <div className="movieItem" key={movie.id}>
                         <Link to={`/Card/${movie.id}`}>
                             <img className="movie" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title}/>
+                            <div className="infoIndMovie">
+                                <h3 className="titleMovie">{movie.title}</h3>
+                                <p className="normalText">{movie.vote_average} | ({movie.release_date})</p>
+                            </div>
                         </Link>
-                        <h3 className="titleMovie">{movie.title}<span className="normalText"> ({movie.release_date})</span></h3>
                     </div>
                 ))}
             </div>
@@ -55,7 +58,10 @@ export function Today() {
                         <Link to={`/Card/${movie.id}`}>
                             <img className="movie" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title}/>
                         </Link>
-                        <h3 className="titleMovie">{movie.title}<span className="normalText"> ({movie.release_date})</span></h3>
+                        <div className="infoIndMovie">
+                            <h3 className="titleMovie">{movie.title}</h3>
+                            <p className="normalText">{movie.vote_average} | ({movie.release_date})</p>
+                        </div>
                     </div>
                 ))}
             </div>

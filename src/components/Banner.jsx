@@ -22,7 +22,7 @@ function Banner() {
     return (
         <div className="banner"> 
             <Link to = {`/Card/${movie.id}`}>
-                <img className="bannerImg" src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`} alt={movie.title}/>
+                <img className="bannerImg" src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`} alt={movie.title}/>
                 <div className="bannerInfo">
                     <h1 className="bannerTitle">{movie.title}</h1>
                     <p className="infos"><span className="color">{movie.vote_average}</span> - {movie.release_date}</p>
