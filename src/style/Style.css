@@ -312,6 +312,14 @@ template {
   display: none;
 }
 
+.btnGenre {
+  border-radius: 50px;
+  background-color: rgb(24, 24, 24);
+  width: 15vw;
+  margin: 2%;
+  padding: 2%;
+}
+
 .banner {
   position: relative;
   display: flex;
@@ -405,5 +413,194 @@ template {
   opacity: 0.2;
 }
 .Trending .trending .trendList .movieItem:hover .infoIndMovie {
+  opacity: 1;
+}
+
+.individualCards .indCard {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 0;
+  margin-top: 5%;
+  height: 30vw;
+}
+.individualCards .info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 5%;
+  margin: 5% 5% 2% 5%;
+  border-bottom: 1px grey solid;
+}
+.individualCards .info .specificInfos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.individualCards .info .specificInfos .time {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  width: 40%;
+}
+.individualCards .info .specificInfos .time .timer {
+  width: 2vw;
+  filter: invert(1);
+}
+.individualCards .info .specificInfos .infoMovie {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  width: 20%;
+}
+.individualCards .info .specificInfos .infoMovie .rating {
+  width: 2vw;
+  filter: invert(1);
+}
+.individualCards .release {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding-bottom: 5%;
+  margin: 5% 5% 2% 5%;
+  border-bottom: 1px grey solid;
+  justify-content: center;
+  gap: 15%;
+}
+.individualCards .release .releaseDate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.individualCards .release genre {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+}
+.individualCards .synopsis {
+  text-align: center;
+  padding-bottom: 5%;
+  margin: 5% 5% 2% 5%;
+  border-bottom: 1px grey solid;
+  justify-content: center;
+  gap: 15%;
+}
+.individualCards .synopsis p {
+  margin: 0% 20% 0% 20%;
+}
+
+.sameGenre .ListGenre {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.sameGenre .ListGenre::-webkit-scrollbar {
+  display: none;
+}
+.sameGenre .ListGenre .movieItem {
+  position: relative;
+  margin-left: 5%;
+}
+.sameGenre .ListGenre .movieItem .movie {
+  flex: 0 0 auto;
+  height: 30vh;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+}
+.sameGenre .ListGenre .movieItem .infoIndMovie {
+  position: absolute;
+  top: 70%;
+  margin-bottom: 0;
+  width: 80%;
+  opacity: 0;
+}
+.sameGenre .ListGenre .movieItem .infoIndMovie .titleMovie {
+  font-size: 8px;
+  margin-bottom: 2%;
+  margin-right: 5%;
+  margin-left: 7%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sameGenre .ListGenre .movieItem .infoIndMovie .normalText {
+  font-size: 0.5vw;
+  margin-top: 5%;
+  text-align: right;
+  color: lightgrey;
+}
+.sameGenre .ListGenre .movieItem:hover .movie {
+  opacity: 0.2;
+}
+.sameGenre .ListGenre .movieItem:hover .infoIndMovie {
+  opacity: 1;
+}
+
+.simMovies {
+  margin-left: 5%;
+  margin-bottom: 10%;
+}
+.simMovies .whatToWatch {
+  display: flex;
+  flex-direction: column;
+}
+.simMovies .whatToWatch .MovieList {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.simMovies .whatToWatch .MovieList::-webkit-scrollbar {
+  display: none;
+}
+.simMovies .whatToWatch .MovieList .movieItem {
+  position: relative;
+  margin-left: 1%;
+}
+.simMovies .whatToWatch .MovieList .movieItem .movie {
+  flex: 0 0 auto;
+  height: 30vh;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+}
+.simMovies .whatToWatch .MovieList .movieItem .infoIndMovie {
+  position: absolute;
+  top: 70%;
+  margin-bottom: 0;
+  width: 80%;
+  opacity: 0;
+}
+.simMovies .whatToWatch .MovieList .movieItem .infoIndMovie .titleMovie {
+  font-size: 8px;
+  margin-bottom: 2%;
+  margin-right: 5%;
+  margin-left: 7%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.simMovies .whatToWatch .MovieList .movieItem .infoIndMovie .normalText {
+  font-size: 0.5vw;
+  margin-top: 5%;
+  text-align: right;
+  color: lightgrey;
+}
+.simMovies .whatToWatch .MovieList .movieItem:hover .movie {
+  opacity: 0.2;
+}
+.simMovies .whatToWatch .MovieList .movieItem:hover .infoIndMovie {
   opacity: 1;
 }/*# sourceMappingURL=Style.css.map */

@@ -1,0 +1,62 @@
+.sameGenre {
+    .ListGenre {
+        display: flex;
+        flex-direction: row;
+        display: flex;
+        overflow-x: scroll; 
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none; 
+
+        &::-webkit-scrollbar {
+            display: none; 
+        }
+        .movieItem{
+            position: relative;
+            margin-left: 5%;
+        
+            .movie {
+            flex: 0 0 auto;
+            height: 30vh;
+            margin-right: 10px;
+            border-radius: 5px;
+            transition: opacity 0.3s;
+            }
+        
+            .infoIndMovie {
+                position: absolute;
+                top: 70%;
+                margin-bottom:0;
+                width: 80%;
+                opacity: 0;
+        
+                .titleMovie {
+                    font-size: 8px;
+                    margin-bottom: 2%;
+                    margin-right: 5%;
+                    margin-left: 7%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+        
+                .normalText {
+                    font-size: 0.5vw;
+                    margin-top:5%;
+                    text-align: right;
+                    color: lightgrey;
+                }
+            }
+            &:hover {
+                .movie {
+                    opacity: 0.2; 
+                }
+        
+                .infoIndMovie {
+                    opacity: 1; 
+                }
+            }
+        }
+    }
+}
+

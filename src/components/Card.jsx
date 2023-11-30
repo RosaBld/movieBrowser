@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { RequestSpecific, Genre } from '../utilities/request';
 import { SimilarMovies } from './SimilarMovies'
+
 
 function Cards() {
     const [movie, setMovie] = useState(null);
@@ -31,21 +32,36 @@ function Cards() {
     }
 
     return ( 
-        <div className="individualsCards">
+        <div className="individualCards">
+            <img className="indCard" src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`} alt={movie.title}/>
+            
             <div className='info'>
-                <img src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`} alt={movie.title}/>
-                <h3>{movie.original_title}</h3>
-                <p className="time">{movie.runtime} minutes</p>
-                <p className="infoMovie">{movie.vote_average}</p>
+                <h3>{movie.title}</h3>
+                <div className="specificInfos">
+                    <p className="time">
+                        <img className="timer" src="/timer.png" alt="timer-logo"></img>
+                        {movie.runtime} minutes
+                    </p>
+                    <p className="infoMovie">
+                        <img className="rating" src="/rating.png" alt="rating-logo"></img>
+                        {movie.vote_average}
+                    </p>
+                </div>
             </div>
 
             <div className='release'>
-                <h4>Release date</h4>
-                <p>{movie.release_date}</p>
-                <h4>Genre</h4>
-                {movie.genres && movie.genres.map((genre) => (
-                    <p key={genre.id}>{genre.name}</p>
-                ))}
+                <div className="releaseDate">
+                    <h4>Release date</h4>
+                    <p>{movie.release_date}</p>
+                </div>
+                <div className="genre">
+                    <h4>Genre</h4>
+                        {movie.genres && movie.genres.map((genre) => (
+                            <Link key={genre.id} to = {`/Genre/${genre.id}`}>
+                                <button className="btnGenre" key={genre.id}>{genre.name}</button>
+                            </Link>
+                        ))}
+                </div>
             </div>
 
             <div className="synopsis">

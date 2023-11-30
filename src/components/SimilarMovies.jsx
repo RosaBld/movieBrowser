@@ -33,16 +33,23 @@ export function SimilarMovies() {
     }
 
     return (
-        <div>
-            <h2>Movies you might want to watch</h2>
-            {Array.isArray(simMovies) && simMovies.map(movie => (
-                <div key={movie.id}>
-                    <Link to={`/Card/${movie.id}`}>
-                        <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title}/>
-                    </Link>
-                    <h3>{movie.title}<span className="normalText"> ({movie.release_date})</span></h3>
+        <div className="simMovies">
+            <div className="whatToWatch">
+                <h2>Movies you might want to watch</h2>
+                <div className="MovieList">
+                    {Array.isArray(simMovies) && simMovies.map(movie => (
+                    <div className="movieItem" key={movie.id}>
+                        <Link to={`/Card/${movie.id}`}>
+                            <img className="movie" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title}/>
+                            <div className="infoIndMovie">
+                                <h3 className="titleMovie">{movie.title}</h3>
+                                <p className="normalText">{movie.vote_average} | ({movie.release_date})</p>
+                            </div>
+                        </Link>
+                    </div>
+                    ))}
                 </div>
-            ))}
+            </div>
         </div>
     );
 }

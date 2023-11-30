@@ -1,0 +1,92 @@
+.individualCards {
+    .indCard {
+        position: relative;
+        object-fit: cover;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 0;
+        margin-top: 5%;
+        height: 30vw;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding-bottom:5%;
+        margin: 5% 5% 2% 5%;
+        border-bottom: 1px grey solid;
+        
+
+        .specificInfos {
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .time {
+                display: flex;
+                align-items: center;
+                gap: 2%;
+                width: 40%;
+
+                .timer {
+                    width: 2vw;
+                    filter: invert(1);
+                }
+            }
+
+            .infoMovie {
+                display: flex;
+                align-items: center;
+                gap: 2%;
+                width:20%;
+
+                .rating {
+                    width: 2vw;
+                    filter: invert(1);
+                }
+            }
+        }
+    }
+
+    .release {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        padding-bottom:5%;
+        margin: 5% 5% 2% 5%;
+        border-bottom: 1px grey solid;
+        justify-content: center;
+        gap: 15%;
+
+        .releaseDate {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        genre {
+            display: flex;
+            flex-direction: row;
+            gap: 10%;
+
+        }
+
+    }
+
+    .synopsis {
+        text-align: center;
+        padding-bottom:5%;
+        margin: 5% 5% 2% 5%;
+        border-bottom: 1px grey solid;
+        justify-content: center;
+        gap: 15%;
+
+        p {
+            margin: 0% 20% 0% 20%;
+        }
+    }
+}

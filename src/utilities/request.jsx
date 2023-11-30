@@ -23,6 +23,28 @@ export const RequestBanner = async () => {
     }   
 };
 
+export const TopRated = async () => {
+    try {
+        const response = await fetch(
+            `https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}`,
+            {
+                headers: {
+                    'Authorization': `Bearer ${BEARER}`,
+                    'Content-Type': 'application/json;charset=utf-8'
+                }
+            }
+        );
+        if (!response.ok) {
+            throw new Error('Something went wrong');
+        }
+        const data = await response.json();
+        return data.results;
+    } catch (error) {
+        console.error(error);
+        throw new Error("Can't fetch the datas");
+    }   
+};
+
 export const Request = async () => {
     try {
         const response = await fetch(
@@ -110,5 +132,29 @@ export const Genre = async () => {
         throw new Error("Can't fetch the datas");
     }   
 }
+
+
+
+// export const ByGenre = async () => {
+//     try {
+//         const response = await fetch(
+//             `https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=${genreId}?api_key=${API_KEY}`,
+//             {
+//                 headers: {
+//                     'Authorization': `Bearer ${BEARER}`,
+//                     'Content-Type': 'application/json;charset=utf-8'
+//                 }
+//             }
+//         );
+//         if (!response.ok) {
+//             throw new Error('Something went wrong');
+//         }
+//         const data=await response.json();
+//         return data;
+//     } catch (error) {
+//         console.error(error);
+//         throw new Error("Can't fetch the datas");
+//     }   
+// }
 
 
