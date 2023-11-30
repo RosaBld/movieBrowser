@@ -1,4 +1,5 @@
-import './App.css'
+// import './App.css'
+import './style/Style.css'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Cards from './components/Card';

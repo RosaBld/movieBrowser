@@ -1,0 +1,48 @@
+.banner {
+    position: relative;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+
+    .bannerImg {
+        position: relative;
+        object-fit: cover;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 0;
+        border-radius: 5px;
+        margin-top: 5%;
+        height: 60vw;
+    }
+
+    .bannerInfo {
+        position: absolute;
+        z-index: 1;
+        top:70%;
+        left:35%;
+        transform: translate(-50%, -50%);
+        color: white;
+        
+        .bannerTitle {
+            font-size: 4vw;
+        }
+    
+        .infos {
+            font-size: 2vw;
+
+            .color {
+                color: green;
+                font-weight: bold;
+            }
+        }
+
+        .overviewBanner {
+            font-size: 1vw;
+        } 
+
+        &:hover {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+

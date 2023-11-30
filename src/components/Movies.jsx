@@ -18,16 +18,17 @@ export function ThisWeek() {
     console.log(movies);
 
     return (
-        <div>
-            <h3>Trending this week:</h3>
-            {movies.map(movie => (
-                <div key={movie.id}>
-                    <Link to = {`/Card/${movie.id}`}>
-                        <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title}/>
-                    </Link>
-                    <h3>{movie.title}<span className="normalText"> ({movie.release_date})</span></h3>
-                </div>
-            ))}
+        <div className="trending">
+            <div className="trendList">
+                {movies.map(movie => (
+                    <div className="movieItem" key={movie.id}>
+                        <Link to={`/Card/${movie.id}`}>
+                            <img className="movie" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title}/>
+                        </Link>
+                        <h3 className="titleMovie">{movie.title}<span className="normalText"> ({movie.release_date})</span></h3>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }
@@ -47,16 +48,17 @@ export function Today() {
     console.log(movies);
 
     return (
-        <div>
-            <h3>Trending Today:</h3>
-            {movies.map(movie => (
-                <div key={movie.id}>
-                    <Link to = {`/Card/${movie.id}`}>
-                        <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title}/>
-                    </Link>
-                    <h3>{movie.title}<span className="normalText"> ({movie.release_date})</span></h3>
-                </div>
-            ))}
+        <div className="trending">
+            <div className="trendList">
+                {movies.map(movie => (
+                    <div className="movieItem" key={movie.id}>
+                        <Link to={`/Card/${movie.id}`}>
+                            <img className="movie" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title}/>
+                        </Link>
+                        <h3 className="titleMovie">{movie.title}<span className="normalText"> ({movie.release_date})</span></h3>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }
