@@ -9,7 +9,7 @@ export function NavBar() {
                     <ul>
                         <li>
                             <Link to='/'>
-                                <img className="navbarlogo" src='/public/logoTMDB.svg' alt='logo_TMBD'></img>
+                                <img className="navbarlogo" src='/logoTMDB.svg' alt='logo_TMBD'></img>
                             </Link>
                         </li>
                         <li>
