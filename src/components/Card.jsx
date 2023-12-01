@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { RequestSpecific, Genre } from '../utilities/request';
 import { SimilarMovies } from './SimilarMovies'
-
+// import { Provider } from './Provider';
 
 function Cards() {
     const [movie, setMovie] = useState(null);
@@ -34,9 +34,9 @@ function Cards() {
     return ( 
         <div className="individualCards">
             <img className="indCard" src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`} alt={movie.title}/>
-            
+            {/* <Provider /> */}
             <div className='info'>
-                <h3>{movie.title}</h3>
+                <h3 className='titleMovie'>{movie.title}</h3>
                 <div className="specificInfos">
                     <p className="time">
                         <img className="timer" src="/timer.png" alt="timer-logo"></img>

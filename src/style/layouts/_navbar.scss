@@ -1,0 +1,18 @@
+.navbar {
+    margin: 0% 2% 0% 2%;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        
+        li {
+
+            .navbarlogo {
+                width: 100px;
+            }
+        }
+
+    }
+
+}

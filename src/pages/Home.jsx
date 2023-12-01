@@ -1,16 +1,16 @@
 import { ThisWeek, Today } from '../components/Movies';
 import Banner from '../components/Banner';
+import { NavBar } from '../components/NavBar';
 
 export function Home() {
     return (
         <div className="App">
         <Banner />
             <div className="Trending">
-                <h3>Trending this week:</h3>
+                <h3 className="trends">Trending this week:</h3>
                 <ThisWeek />
-                <h3>Trending today:</h3>
+                <h3 className="trends">Trending today:</h3>
                 <Today />
-
             </div>
         </div>
     )

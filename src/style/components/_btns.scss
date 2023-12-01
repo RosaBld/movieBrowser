@@ -1,0 +1,30 @@
+@media screen and (max-width: 448px) {
+    .btnGenre {
+        border-radius: 50px;
+        background-color: #90cea1;
+        width: 20vw;
+        margin: 2%;
+        padding: 2%;
+        color: #0d253f;
+        &:hover {
+            background-color: #01b4e4;
+        }
+    }
+}
+
+@media screen and (min-width:448px) {
+    .btnGenre {
+        border-radius: 50px;
+        background: #102d4c;
+        width: 18vw;
+        margin: 2%;
+        padding: 2%;
+        color: white;
+        
+        &:hover {
+            background: linear-gradient(270deg, rgba(86,199,255,1) 0%, rgba(144,206,161,1) 100%);
+            box-shadow: inset 0px 5px 10px 5px #01b4e4,
+                        inset 5px 10px 5px 0px #90cea1;
+        }
+    }
+}

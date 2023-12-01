@@ -312,14 +312,69 @@ template {
   display: none;
 }
 
-.btnGenre {
-  border-radius: 50px;
-  background-color: rgb(24, 24, 24);
-  width: 15vw;
-  margin: 2%;
-  padding: 2%;
+.App .Trending .trends {
+  background: linear-gradient(180deg, #01b4e4, #90cea1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.App .Trending .trending .trendList .infoIndMovie .titleMovie {
+  color: #01b4e4;
+  font-size: 1vw;
+}
+.App .Trending .trending .trendList .infoIndMovie .normalText {
+  color: #90cea1;
+  font-size: 0.6vw;
 }
 
+.navbar ul li {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(90deg, #01b4e4, #90cea1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.simMovies .whatToWatch .MovieList .movieItem .infoIndMovie .titleMovie {
+  color: #01b4e4;
+  font-size: 1vw;
+}
+.simMovies .whatToWatch .MovieList .movieItem .infoIndMovie .normalText {
+  color: #90cea1;
+  font-size: 0.6vw;
+}
+
+@media screen and (max-width: 448px) {
+  .btnGenre {
+    border-radius: 50px;
+    background-color: #90cea1;
+    width: 20vw;
+    margin: 2%;
+    padding: 2%;
+    color: #0d253f;
+  }
+  .btnGenre:hover {
+    background-color: #01b4e4;
+  }
+}
+@media screen and (min-width: 448px) {
+  .btnGenre {
+    border-radius: 50px;
+    background: #102d4c;
+    width: 18vw;
+    margin: 2%;
+    padding: 2%;
+    color: white;
+  }
+  .btnGenre:hover {
+    background: linear-gradient(270deg, rgb(86, 199, 255) 0%, rgb(144, 206, 161) 100%);
+    box-shadow: inset 0px 5px 10px 5px #01b4e4, inset 5px 10px 5px 0px #90cea1;
+  }
+}
 .banner {
   position: relative;
   display: flex;
@@ -334,7 +389,6 @@ template {
   box-sizing: border-box;
   z-index: 0;
   border-radius: 5px;
-  margin-top: 5%;
   height: 60vw;
 }
 .banner .bannerInfo {
@@ -391,11 +445,10 @@ template {
   position: absolute;
   top: 70%;
   margin-bottom: 0;
-  width: 80%;
+  width: 90%;
   opacity: 0;
 }
 .Trending .trending .trendList .movieItem .infoIndMovie .titleMovie {
-  font-size: 8px;
   margin-bottom: 2%;
   margin-right: 5%;
   margin-left: 7%;
@@ -404,10 +457,8 @@ template {
   white-space: nowrap;
 }
 .Trending .trending .trendList .movieItem .infoIndMovie .normalText {
-  font-size: 0.5vw;
   margin-top: 5%;
   text-align: right;
-  color: lightgrey;
 }
 .Trending .trending .trendList .movieItem:hover .movie {
   opacity: 0.2;
@@ -580,11 +631,10 @@ template {
   position: absolute;
   top: 70%;
   margin-bottom: 0;
-  width: 80%;
+  width: 90%;
   opacity: 0;
 }
 .simMovies .whatToWatch .MovieList .movieItem .infoIndMovie .titleMovie {
-  font-size: 8px;
   margin-bottom: 2%;
   margin-right: 5%;
   margin-left: 7%;
@@ -593,14 +643,24 @@ template {
   white-space: nowrap;
 }
 .simMovies .whatToWatch .MovieList .movieItem .infoIndMovie .normalText {
-  font-size: 0.5vw;
   margin-top: 5%;
   text-align: right;
-  color: lightgrey;
 }
 .simMovies .whatToWatch .MovieList .movieItem:hover .movie {
   opacity: 0.2;
 }
 .simMovies .whatToWatch .MovieList .movieItem:hover .infoIndMovie {
   opacity: 1;
+}
+
+.navbar {
+  margin: 0% 2% 0% 2%;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.navbar ul li .navbarlogo {
+  width: 100px;
 }/*# sourceMappingURL=Style.css.map */

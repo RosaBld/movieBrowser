@@ -1,0 +1,61 @@
+.App {
+    .Trending {
+        .trends {
+            background: linear-gradient(180deg, #01b4e4, #90cea1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .trending {
+            .trendList {
+                .infoIndMovie {
+                    .titleMovie {
+                        color: #01b4e4;
+                        font-size: 1vw;;
+                    }
+                    .normalText {
+                        color: #90cea1;
+                        font-size: 0.6vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar {
+    ul {
+        li {
+            display: flex;
+            flex-direction: row;
+            background: linear-gradient(90deg, #01b4e4, #90cea1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+.simMovies {
+    .whatToWatch {
+        .MovieList {
+            .movieItem {
+                .infoIndMovie {
+                    .titleMovie {
+                        color: #01b4e4;
+                        font-size: 1vw;
+                    }
+                    .normalText {
+                        color: #90cea1;
+                        font-size: 0.6vw;
+                    }
+                }
+            }
+        }
+    }
+}

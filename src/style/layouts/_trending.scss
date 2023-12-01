@@ -30,11 +30,10 @@
                     position: absolute;
                     top: 70%;
                     margin-bottom:0;
-                    width: 80%;
+                    width: 90%;
                     opacity: 0;
     
                     .titleMovie {
-                        font-size: 8px;
                         margin-bottom: 2%;
                         margin-right: 5%;
                         margin-left: 7%;
@@ -44,10 +43,8 @@
                     }
     
                     .normalText {
-                        font-size: 0.5vw;
                         margin-top:5%;
                         text-align: right;
-                        color: lightgrey;
                     }
                 }
                 &:hover {
