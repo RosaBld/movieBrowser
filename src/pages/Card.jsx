@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { RequestSpecific, Genre } from '../utilities/request';
-import { SimilarMovies } from './SimilarMovies'
+import { SimilarMovies } from '../components/SimilarMovies'
 // import { Provider } from './Provider';
 
 function Cards() {

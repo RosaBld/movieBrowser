@@ -1,5 +1,6 @@
 import { React } from 'react';
 import { Link } from 'react-router-dom';
+import { ListGenres } from '../pages/ListGenres';
 
 export function NavBar() {
     return (
@@ -23,7 +24,7 @@ export function NavBar() {
                             </Link>
                         </li>
                         <li>
-                            <Link to='/'>
+                            <Link to='/ListGenres'>
                                 Genres
                             </Link>
                         </li>

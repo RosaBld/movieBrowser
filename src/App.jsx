@@ -2,9 +2,10 @@
 import './style/Style.css'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Cards from './components/Card';
+import Cards from './pages/Card';
 import GenreList from './components/Genre';
 import { NavBar} from './components/NavBar';
+import { ListGenres } from './pages/ListGenres';
 
 import { Home } from './pages/Home';
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Card/:id" element={<Cards />} />
           <Route path="/Genre/:id" element={<GenreList />} />
+          <Route path="/ListGenres/" element={<ListGenres />} />
         </Routes>
       </div>
   )

@@ -1,6 +1,5 @@
 import { ThisWeek, Today } from '../components/Movies';
 import Banner from '../components/Banner';
-import { NavBar } from '../components/NavBar';
 
 export function Home() {
     return (
