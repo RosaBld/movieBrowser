@@ -78,15 +78,15 @@ export function NavBar({ isLoggedIn, setIsLoggedIn, user, setUser }) {
                             </li>
                             <li>
                             <select onChange={handleListchange} className="selectGenres">
-                                <option value="">- My Lists -</option>
-                                <option value="watchlist">WatchList</option>
-                                <option value="favorites">Favorites</option>
+                                <option className="choose" value="">- My Lists -</option>
+                                <option className="choose" value="watchlist">WatchList</option>
+                                <option className="choose" value="favorites">Favorites</option>
                             </select>
                             </li>
                                 <select onChange={handleGenreChange} value={selectedGenre} className="selectGenres">
-                                    <option value="">- Select genres -</option>
+                                    <option className="choose" value="">- Select genres -</option>
                                     {genres.genres && genres.genres.map((genre) =>
-                                        <option key={genre.id} value={genre.id}>
+                                        <option className="choose" key={genre.id} value={genre.id}>
                                             {genre.name}
                                         </option>
                                     )}
