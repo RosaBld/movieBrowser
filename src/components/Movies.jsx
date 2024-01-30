@@ -83,7 +83,7 @@ export function ThisWeek() {
                             height: '6%',
                             cursor: 'pointer',
                         }} onClick={closeModal}>
-                            <FontAwesomeIcon icon={faX} className="faClose" style={{widht: '5%'}} />
+                            <FontAwesomeIcon icon={faX} className="faClose" style={{widht: '10%'}} />
                         </button>
                     </div>
                 )}
