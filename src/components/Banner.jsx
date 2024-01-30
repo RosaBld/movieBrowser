@@ -80,7 +80,7 @@ function Banner() {
                     height: '6%',
                     cursor: 'pointer',
                 }} onClick={closeModal}>
-                    <FontAwesomeIcon icon={faX} />
+                    <FontAwesomeIcon icon={faX} className="faClose" />
                 </button>
             </Modal>
         </div>
