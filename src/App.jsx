@@ -37,8 +37,8 @@ function App() {
         <Route path="/Genre/:id" element={<GenreList />} />
         <Route path="/results" element={<ResultsPage />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/watchlist" element={<ResultWatchList />} />
-        <Route path="/favorites" element={<ResultFavoriteMovies />} />
+        <Route path="/watchlist" element={<ResultWatchList />} isLoggedIn={isLoggedIn} />
+        <Route path="/favorites" element={<ResultFavoriteMovies />} isLoggedIn={isLoggedIn} />
       </Routes>
       <Footer />
     </div>

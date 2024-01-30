@@ -5,20 +5,25 @@ import Cards from '../components/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faX } from '@fortawesome/free-solid-svg-icons';
 import { ListWatch } from '../utilities/request';
+import PropTypes from 'prop-types';
 
-export function ResultWatchList() {
+export function ResultWatchList({ isLoggedIn }) {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [selectedMovie, setSelectedMovie] = useState(null);
     const [movie, setMovie] = useState([]);
 
     useEffect (() => {
         const fetchMovies = async () => {
-            const result = await ListWatch();
-            setMovie(result.results);
+            if (isLoggedIn) {
+                const result = await ListWatch();
+                setMovie(result.results);
+            } else {
+                setMovie([]);
+            }
         };
 
         fetchMovies();
-    }, []);
+    }, [isLoggedIn]);
 
     const openModal = (movie) => {
         setSelectedMovie(movie);
@@ -90,3 +95,7 @@ export function ResultWatchList() {
         </div>
     )
 }
+
+ResultWatchList.propTypes = {
+    isLoggedIn: PropTypes.bool.isRequired,
+};
