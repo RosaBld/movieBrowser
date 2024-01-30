@@ -76,8 +76,8 @@ function Banner() {
                     color: 'white',
                     border: '1px solid lightsteelblue', 
                     borderRadius: '4px', 
-                    width: '3rem', 
-                    height: '2rem',
+                    width: '5%', 
+                    height: '6%',
                     cursor: 'pointer',
                 }} onClick={closeModal}>
                     <FontAwesomeIcon icon={faX} />
