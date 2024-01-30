@@ -914,6 +914,9 @@ template {
   gap: 7vw;
   margin-left: 3vw;
 }
+.individualCards .imageAndButtons .image-container .watchlist-overlay .lists .addLists {
+  font-size: 35px;
+}
 .individualCards .imageAndButtons .image-container .watchlist-overlay .lists .addLists .faLists {
   font-size: 30px;
 }
