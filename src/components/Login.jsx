@@ -69,12 +69,9 @@ export function Login() {
 
             sessionStorage.removeItem('token');
             sessionStorage.setItem('sessionId', sessionId);
-            console.log(sessionId);
-            console.log('storedSessionId after login:', sessionStorage.getItem('sessionId'));
     
             const accountDetails = await GetAccountDetails(sessionId);
             sessionStorage.setItem('accountId', accountDetails.id);
-            console.log('storedAccountId after login:', sessionStorage.getItem('accountId'));
     
             setIsLoggedIn(true);
             setUser(accountDetails);

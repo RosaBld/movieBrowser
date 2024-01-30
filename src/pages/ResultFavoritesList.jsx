@@ -14,7 +14,6 @@ export function ResultFavoriteMovies() {
     useEffect (() => {
         const fetchMovies = async () => {
             const result = await ListFavorite();
-            console.log(result);
             setMovie(result.results);
         };
 

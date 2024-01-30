@@ -13,13 +13,9 @@ export function WatchLists({ movieId }) {
     useEffect(() => {
 
         const storedAccountId = sessionStorage.getItem('accountId');
-
-        console.log('storedAccountId:', storedAccountId);
         
         setAccountId(storedAccountId);
     }, []);
-
-    console.log(movieId);
 
     const addToWatchList = async () => {
         if (accountId) {
@@ -46,7 +42,6 @@ export function WatchLists({ movieId }) {
     useEffect (() => {
         const fetchMovies = async () => {
             const result = await ListWatch();
-            console.log(result);
             setWatchlist(result.results);
         };
     
@@ -82,7 +77,6 @@ export function WatchLists({ movieId }) {
     useEffect (() => {
         const fetchMovies = async () => {
             const result = await ListFavorite();
-            console.log(result);
             setFavoriteList(result.results);
         };
     

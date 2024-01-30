@@ -30,8 +30,6 @@ function Cards({ movieId }) {
 
     }, [movieId, setGenres]);
 
-    console.log(movieId);
-
     useEffect(() => {
         const storedSessionId = sessionStorage.getItem('sessionId');
         const storedAccountId = sessionStorage.getItem('accountId');

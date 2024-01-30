@@ -14,7 +14,6 @@ export function ResultWatchList() {
     useEffect (() => {
         const fetchMovies = async () => {
             const result = await ListWatch();
-            console.log(result);
             setMovie(result.results);
         };
 
