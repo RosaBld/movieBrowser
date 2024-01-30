@@ -132,7 +132,7 @@ export function Login() {
                     >
                         <div className="profileInformations">
                             <h2 className="titleProfile">Profile</h2>
-                            <h3 className="welcomeBack">Hey! Welcome back <FontAwesomeIcon icon={faFaceSmile} style={{color: "#ffffff",}} /></h3>
+                            <h3 className="welcomeBack">Hey! Welcome back <FontAwesomeIcon className="faSmile" icon={faFaceSmile} style={{color: "#ffffff",}} /></h3>
                             {user && (
                                 <>
                                     <p className="infoProfile">Name: <span className="info">{user.name ? user.name : 'None'}</span></p>
