@@ -96,10 +96,10 @@ export function WatchLists({ movieId }) {
     return (
         <div className="lists">
             <button className="addLists" onClick={isInWatchlist(movieId) ? RemoveFromWatchList : addToWatchList } >
-                <FontAwesomeIcon className="faLists" icon={isInWatchlist(movieId) ? faX : faPlus} style={{color: "#ffffff"}} size="xs" />
+                <FontAwesomeIcon className="faLists" icon={isInWatchlist(movieId) ? faX : faPlus} style={{color: "#ffffff"}} />
             </button>
             <button className="addLists" onClick={isInFavorite(movieId) ? RemoveFromFavoriteList : addToFavorite }>
-                <FontAwesomeIcon className="faLists" icon={isInFavorite(movieId) ? faX : faThumbsUp} style={{color: "#ffffff"}} size="xs" />
+                <FontAwesomeIcon className="faLists" icon={isInFavorite(movieId) ? faX : faThumbsUp} style={{color: "#ffffff"}} />
             </button>
         </div>
     )

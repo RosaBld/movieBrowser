@@ -701,6 +701,9 @@ template {
   border-radius: 5px;
   cursor: pointer;
 }
+.addLists .faLists {
+  font-size: 15px;
+}
 
 .banner {
   width: 100%;
@@ -912,12 +915,6 @@ template {
   flex-direction: row;
   gap: 7vw;
   margin-left: 3vw;
-}
-.individualCards .imageAndButtons .image-container .watchlist-overlay .lists .addLists {
-  font-size: 35px;
-}
-.individualCards .imageAndButtons .image-container .watchlist-overlay .lists .addLists .faLists {
-  font-size: 30px;
 }
 .individualCards .imageAndButtons:hover .indCard {
   opacity: 0.4;
