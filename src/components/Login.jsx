@@ -157,7 +157,7 @@ export function Login() {
                             cursor: 'pointer',
                         }}
                         >
-                            <FontAwesomeIcon icon={faX} />
+                            <FontAwesomeIcon icon={faX} className="faClose" />
                         </button>
                     </Modal>
                 </div>
@@ -211,7 +211,7 @@ export function Login() {
                             cursor: 'pointer',
                         }}
                         >
-                            <FontAwesomeIcon icon={faX} />
+                            <FontAwesomeIcon icon={faX} className="faClose" />
                         </button>
                     </Modal>
                 </div>

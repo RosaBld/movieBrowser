@@ -113,7 +113,7 @@ useEffect(() => {
                             height: '2rem',
                             cursor: 'pointer',
                         }} onClick={closeModal}>
-                            <FontAwesomeIcon icon={faX} />
+                            <FontAwesomeIcon icon={faX} className="faClose" />
                         </button>
                     </div>
                 )}

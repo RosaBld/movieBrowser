@@ -702,7 +702,11 @@ template {
   cursor: pointer;
 }
 .addLists .faLists {
-  width: 13%;
+  width: 12%;
+}
+
+.faClose {
+  width: 15%;
 }
 
 .banner {

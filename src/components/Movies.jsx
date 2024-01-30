@@ -79,11 +79,11 @@ export function ThisWeek() {
                             color: 'white',
                             border: '1px solid lightsteelblue', 
                             borderRadius: '4px', 
-                            width: '3rem', 
-                            height: '2rem',
+                            width: '5%', 
+                            height: '6%',
                             cursor: 'pointer',
                         }} onClick={closeModal}>
-                            <FontAwesomeIcon icon={faX} />
+                            <FontAwesomeIcon icon={faX} className="faClose" style={{widht: '5%'}} />
                         </button>
                     </div>
                 )}
@@ -168,7 +168,7 @@ export function Today() {
                             height: '2rem',
                             cursor: 'pointer',
                         }} onClick={closeModal}>
-                            <FontAwesomeIcon icon={faX} />
+                            <FontAwesomeIcon icon={faX} className="faClose" />
                         </button>
                     </div>
                 )}
@@ -251,7 +251,7 @@ export function Upcoming() {
                             height: '2rem',
                             cursor: 'pointer',
                         }} onClick={closeModal}>
-                            <FontAwesomeIcon icon={faX} />
+                            <FontAwesomeIcon icon={faX} className="faClose" />
                         </button>
                     </div>
                 )}
@@ -334,7 +334,7 @@ export function Popular() {
                             height: '2rem',
                             cursor: 'pointer',
                         }} onClick={closeModal}>
-                            <FontAwesomeIcon icon={faX} />
+                            <FontAwesomeIcon icon={faX} className="faClose" />
                         </button>
                     </div>
                 )}
@@ -414,7 +414,7 @@ export function NowPlaying() {
                             height: '2rem',
                             cursor: 'pointer',
                         }} onClick={closeModal}>
-                            <FontAwesomeIcon icon={faX} />
+                            <FontAwesomeIcon icon={faX} className="faClose" />
                         </button>
                     </Modal>
                 </>
