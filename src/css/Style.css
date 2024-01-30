@@ -696,13 +696,13 @@ template {
 
 .addLists {
   background: transparent;
-  height: 10%;
-  width: 10%;
+  height: 100%;
+  width: 100%;
   border-radius: 5px;
   cursor: pointer;
 }
 .addLists .faLists {
-  font-size: 15px;
+  width: 13%;
 }
 
 .banner {
