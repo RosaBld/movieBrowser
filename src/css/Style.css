@@ -915,7 +915,7 @@ template {
   margin-left: 3vw;
 }
 .individualCards .imageAndButtons .image-container .watchlist-overlay .lists .addLists .faLists {
-  font-size: 120%;
+  font-size: 20%;
 }
 .individualCards .imageAndButtons:hover .indCard {
   opacity: 0.4;
