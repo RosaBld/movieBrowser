@@ -100,7 +100,7 @@ export function Login() {
         sessionStorage.removeItem('username');
         sessionStorage.removeItem('password');
         localStorage.removeItem('storedAccountId');
-        sessionStorage.removeItem('storedAccountId');
+        sessionStorage.removeItem('accountId');
     
         setIsLoggedIn(false);
         setUser(null);
