@@ -1,0 +1,36 @@
+.contactUs {
+    padding: 3rem 2rem ;
+
+    .contactForm {
+        border: 2px solid white;
+        border-radius: 5px;
+        box-shadow: 0px 5px 10px 0px;
+        margin: 2rem;
+
+        .formContact {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 2rem;
+        }
+
+        label {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+            color: white;
+
+            #message {
+                height: 5rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:764px) {
+    .contactUs {
+        .contactForm {
+            max-width: 70vw;
+        }
+    }
+}

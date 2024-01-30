@@ -1,0 +1,118 @@
+.individualCards {
+
+    .imageAndButtons {
+
+        .image-container {
+            position: relative;
+
+            .indCard {
+                position: relative;
+                aspect-ratio: 16 / 9;
+                width: 100%;
+                box-sizing: border-box;
+                z-index: 0;
+            }
+
+            .watchlist-overlay {
+                position: absolute;
+                top: 80%;
+
+                .lists {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 7vw;
+                    margin-left: 3vw;
+
+                    .addLists {
+                        .faLists {
+                            font-size: 120%;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        &:hover {
+            .indCard {
+                opacity: 0.4;
+            }
+             
+        }
+    }
+    
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding-bottom:1rem;
+        margin: 1rem 2rem 1rem 2rem;
+        border-bottom: 1px grey solid;
+        
+
+        .specificInfos {
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .time {
+                display: flex;
+                align-items: center;
+                gap: 2%;
+                width: 40%;
+
+                .timer {
+                    width: 1.3rem;
+                    filter: invert(1);
+                }
+            }
+
+            .infoMovie {
+                display: flex;
+                align-items: center;
+                gap: 2%;
+                width:20%;
+
+                .rating {
+                    width: 1.3rem;
+                    filter: invert(1);
+                }
+            }
+        }
+    }
+
+    .release {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom:1rem;
+        margin: 0rem 2rem 1rem 2rem;
+        border-bottom: 1px grey solid;
+        justify-content: center;
+        gap: 15%;
+
+        .releaseDate {
+            display:flex;
+            flex-direction: row;
+            gap: 3rem;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .synopsis {
+        text-align: center;
+        padding-bottom:2rem;
+        margin: 1rem 2rem 1rem 2rem;
+        border-bottom: 1px grey solid;
+        justify-content: center;
+        gap: 15%;
+
+        p {
+            margin: 0% 20% 0% 20%;
+        }
+    }
+}

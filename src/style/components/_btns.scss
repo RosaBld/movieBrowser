@@ -1,0 +1,128 @@
+@media screen and (max-width: 448px) {
+    .btnGenre {
+        border-radius: 50px;
+        background-color: #90cea1;
+        width: 20vh;
+        margin: 2%;
+        padding: 2%;
+        color: #0d253f;
+        cursor: pointer;
+        &:hover {
+            background-color: #01b4e4;
+        }
+    }
+}
+
+@media screen and (min-width:448px) {
+    .btnGenre {
+        border-radius: 50px;
+        background: #102d4c;
+        width: 18vh;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        color: white;
+        cursor: pointer;
+        &:hover {
+            background: linear-gradient(270deg, rgba(86,199,255,1) 0%, rgba(144,206,161,1) 100%);
+            box-shadow: inset 0px 5px 10px 5px #01b4e4,
+                        inset 5px 10px 5px 0px #90cea1;
+        }
+    }
+}
+
+
+.btnResearch {
+    background: none;
+    border: none;
+    .faSearch {
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.login {
+    background-color: #0d253f;
+    border: none;
+    background: linear-gradient(90deg, #01b4e4, #90cea1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.validate {
+    background-color: #0d253f;
+    border-radius: 5px;
+    padding:1rem 2rem;
+    color: #01b4e4;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+        background: linear-gradient(270deg, rgba(86,199,255,1) 0%, rgba(144,206,161,1) 100%);
+        box-shadow: inset 0px 5px 10px 5px #01b4e4,
+                    inset 5px 10px 5px 0px #90cea1;
+        color:white;
+    }
+}
+
+
+
+.logout {
+    margin-top: 4rem;
+    height: 4rem;
+    width: 100%;
+    background-color: #0d253f;
+    color: #01b4e4;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+        background: linear-gradient(270deg, rgba(86,199,255,1) 0%, rgba(144,206,161,1) 100%);
+        box-shadow: inset 0px 5px 10px 5px #01b4e4,
+                    inset 5px 10px 5px 0px #90cea1;
+        color:white;
+    }
+}
+
+.submit {
+    background-color: #0d253f;
+    color: #01b4e4;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 2.5rem;
+    cursor: pointer;
+    &:hover {
+        background: linear-gradient(270deg, rgba(86,199,255,1) 0%, rgba(144,206,161,1) 100%);
+        box-shadow: inset 0px 5px 10px 5px #01b4e4,
+                    inset 5px 10px 5px 0px #90cea1;
+        color:white;
+    }
+}
+
+.submitMessage {
+    background-color: #0d253f;
+    color: #01b4e4;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 2.5rem;
+    margin: 2rem 0rem;
+    cursor: pointer;
+    &:hover {
+        background: linear-gradient(270deg, rgba(86,199,255,1) 0%, rgba(144,206,161,1) 100%);
+        box-shadow: inset 0px 5px 10px 5px #01b4e4,
+                    inset 5px 10px 5px 0px #90cea1;
+        color:white;
+    }
+}
+
+.addLists {
+    background: transparent;
+    height: 7vh;
+    width: 20vw;
+    border-radius: 5px;
+    size: 5em;
+    cursor: pointer;
+    
+}

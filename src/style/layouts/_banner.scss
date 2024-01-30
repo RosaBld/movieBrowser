@@ -1,0 +1,113 @@
+.banner {
+    width: 100%;
+    padding: 2.5rem 0rem 0rem 0rem;
+
+    .bannerLink {
+        position: relative;
+        cursor: pointer;
+
+        .imgContainer {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 19 / 9;
+            margin: 0;
+            z-index: 0;
+
+            .bannerImg {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                object-fit: cover;
+                opacity: 65%;
+                transition: opacity 0.2s ease-in-out;
+            }
+        }
+        .bannerInfo {
+            width: 70%;
+            position: relative;
+            z-index: 1;
+            top:-20vw;
+            left:40vw;
+            transform: translate(-50%, -50%);
+
+            &:hover {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+            .overviewBanner {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+        &:hover{
+            .bannerImg {
+                opacity: 0.4;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:520px) {
+    .banner {
+        height:85vh;
+        width: 100%;
+    
+        .bannerLink {  
+            .imgContainer {
+                aspect-ratio: 8 / 9;   
+            }
+            .bannerInfo {
+                top:-75vw;
+                .overviewBanner {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }    
+}
+
+@media screen and (min-width:520px) and (max-width:680px) {
+    .banner {
+        height:85vh;
+        width: 100%;
+    
+        .bannerLink {  
+            .imgContainer {
+                aspect-ratio: 9 / 9;   
+            }
+            .bannerInfo {
+                top:-85vw;
+                .overviewBanner {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }    
+}
+
+@media screen and (min-width:470px) and (max-width:520px) {
+    .banner {
+        height:70vh;
+        width: 100%;
+    
+        .bannerLink {  
+            .imgContainer {
+                aspect-ratio: 16 / 9;   
+            }
+            .bannerInfo {
+                top:-45vw;
+                .overviewBanner {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }    
+}

@@ -1,0 +1,1557 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+.App .Trending .trends {
+  background: linear-gradient(180deg, #01b4e4, #90cea1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow-x: hidden;
+  padding: 0rem 1rem;
+}
+.App .Trending .trending .trendList .infoIndMovie .titleMovie {
+  color: #01b4e4;
+  font-size: 1rem;
+}
+.App .Trending .trending .trendList .infoIndMovie .normalText {
+  color: #90cea1;
+  font-size: 0.6rem;
+}
+
+.navbar ul li {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(90deg, #01b4e4, #90cea1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+.navbar ul .selectGenres {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(90deg, #01b4e4, #90cea1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.simMovies .whatToWatch .movieItem a {
+  text-decoration: none;
+}
+.simMovies .whatToWatch .movieItem a:visited {
+  color: inherit;
+}
+.simMovies .whatToWatch .movieItem .infoIndMovie .titleMovie {
+  color: #01b4e4;
+  font-size: 1rem;
+}
+.simMovies .whatToWatch .movieItem .infoIndMovie .normalText {
+  color: #90cea1;
+  font-size: 0.6rem;
+}
+
+.listOfGenre a {
+  text-decoration: none;
+}
+.listOfGenre a .titleGenre {
+  background: linear-gradient(180deg, #01b4e4, #90cea1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.listOfGenre .genresListing .genreListed .movieItem a {
+  text-decoration: none;
+}
+.listOfGenre .genresListing .genreListed .movieItem a:visited {
+  color: inherit;
+}
+.listOfGenre .genresListing .genreListed .movieItem .infoIndMovie .titleMovie {
+  color: #01b4e4;
+  font-size: 1rem;
+}
+.listOfGenre .genresListing .genreListed .movieItem .infoIndMovie .normalText {
+  color: #90cea1;
+  font-size: 0.6rem;
+}
+
+.sameGenre .titleGenre {
+  background: linear-gradient(180deg, #01b4e4, #90cea1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sameGenre .ListGenre .movieItem a {
+  text-decoration: none;
+}
+.sameGenre .ListGenre .movieItem a:visited {
+  color: inherit;
+}
+.sameGenre .ListGenre .movieItem .infoIndMovie .titleMovie {
+  color: #01b4e4;
+  font-size: 1rem;
+}
+.sameGenre .ListGenre .movieItem .infoIndMovie .normalText {
+  color: #90cea1;
+  font-size: 0.6rem;
+}
+
+.individualCards .info .titleMovie {
+  background: linear-gradient(180deg, #01b4e4, #90cea1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+.individualCards .info .specificInfos {
+  color: white;
+}
+.individualCards .release {
+  color: white;
+}
+.individualCards .synopsis h4 {
+  background: linear-gradient(180deg, #01b4e4, #90cea1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.8rem;
+}
+.individualCards .synopsis p {
+  color: white;
+  text-align: justify;
+}
+.individualCards .Similars h2 {
+  background: linear-gradient(180deg, #01b4e4, #90cea1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.8rem;
+}
+
+.banner .bannerLink {
+  text-decoration: none;
+}
+.banner .bannerLink .bannerInfo {
+  color: white;
+}
+.banner .bannerLink .bannerInfo .bannerTitle {
+  font-size: 2rem;
+}
+.banner .bannerLink .bannerInfo .infos {
+  font-size: 1rem;
+}
+.banner .bannerLink .bannerInfo .infos .color {
+  color: rgb(0, 255, 0);
+  font-weight: bold;
+}
+.banner .bannerLink .bannerInfo .overviewBanner {
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .App .banner .bannerLink {
+    text-decoration: none;
+  }
+  .App .banner .bannerLink .bannerInfo .bannerTitle {
+    font-size: 2rem;
+  }
+  .App .banner .bannerLink .bannerInfo .infos {
+    font-size: 1rem;
+  }
+  .App .banner .bannerLink .bannerInfo .overviewBanner {
+    font-size: 1rem;
+  }
+}
+.SecondBanner .bannerLink {
+  text-decoration: none;
+}
+.SecondBanner .bannerLink .bannerInfo {
+  color: white;
+}
+.SecondBanner .bannerLink .bannerInfo .bannerTitle {
+  font-size: 2rem;
+}
+.SecondBanner .bannerLink .bannerInfo .infos {
+  font-size: 1rem;
+}
+.SecondBanner .bannerLink .bannerInfo .infos .color {
+  color: rgb(0, 255, 0);
+  font-weight: bold;
+}
+.SecondBanner .bannerLink .bannerInfo .overviewBanner {
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .App .SecondBanner .bannerLink {
+    text-decoration: none;
+  }
+  .App .SecondBanner .bannerLink .bannerInfo .bannerTitle {
+    font-size: 2rem;
+  }
+  .App .SecondBanner .bannerLink .bannerInfo .infos {
+    font-size: 1rem;
+  }
+  .App .SecondBanner .bannerLink .bannerInfo .overviewBanner {
+    font-size: 1rem;
+  }
+}
+.results h2 {
+  background: linear-gradient(180deg, #01b4e4, #90cea1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.8rem;
+}
+.results .resultsList .movieItem a {
+  text-decoration: none;
+}
+.results .resultsList .movieItem a:visited {
+  color: inherit;
+}
+.results .resultsList .movieItem .infoIndMovie .titleMovie {
+  color: #01b4e4;
+  font-size: 1rem;
+}
+.results .resultsList .movieItem .infoIndMovie .normalText {
+  color: #90cea1;
+  font-size: 0.6rem;
+}
+
+.contactUs .contact {
+  background: linear-gradient(180deg, #01b4e4, #90cea1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.8rem;
+}
+.contactUs .contactForm .formContact .errorMessage {
+  font-weight: bold;
+  color: red;
+}
+
+.titleLogin {
+  background: linear-gradient(180deg, #01b4e4, #90cea1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+.titleProfile {
+  background: linear-gradient(180deg, #01b4e4, #90cea1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+}
+
+.validated {
+  color: rgb(55, 165, 55);
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.infoProfile {
+  color: #01b4e4;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.infoProfile .info {
+  color: #90cea1;
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+
+.welcomeBack {
+  color: white;
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 448px) {
+  .btnGenre {
+    border-radius: 50px;
+    background-color: #90cea1;
+    width: 20vh;
+    margin: 2%;
+    padding: 2%;
+    color: #0d253f;
+    cursor: pointer;
+  }
+  .btnGenre:hover {
+    background-color: #01b4e4;
+  }
+}
+@media screen and (min-width: 448px) {
+  .btnGenre {
+    border-radius: 50px;
+    background: #102d4c;
+    width: 18vh;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    color: white;
+    cursor: pointer;
+  }
+  .btnGenre:hover {
+    background: linear-gradient(270deg, rgb(86, 199, 255) 0%, rgb(144, 206, 161) 100%);
+    box-shadow: inset 0px 5px 10px 5px #01b4e4, inset 5px 10px 5px 0px #90cea1;
+  }
+}
+.btnResearch {
+  background: none;
+  border: none;
+}
+.btnResearch .faSearch {
+  color: white;
+  cursor: pointer;
+}
+
+.login {
+  background-color: #0d253f;
+  border: none;
+  background: linear-gradient(90deg, #01b4e4, #90cea1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.validate {
+  background-color: #0d253f;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  color: #01b4e4;
+  font-weight: bold;
+  cursor: pointer;
+}
+.validate:hover {
+  background: linear-gradient(270deg, rgb(86, 199, 255) 0%, rgb(144, 206, 161) 100%);
+  box-shadow: inset 0px 5px 10px 5px #01b4e4, inset 5px 10px 5px 0px #90cea1;
+  color: white;
+}
+
+.logout {
+  margin-top: 4rem;
+  height: 4rem;
+  width: 100%;
+  background-color: #0d253f;
+  color: #01b4e4;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.logout:hover {
+  background: linear-gradient(270deg, rgb(86, 199, 255) 0%, rgb(144, 206, 161) 100%);
+  box-shadow: inset 0px 5px 10px 5px #01b4e4, inset 5px 10px 5px 0px #90cea1;
+  color: white;
+}
+
+.submit {
+  background-color: #0d253f;
+  color: #01b4e4;
+  font-weight: bold;
+  border-radius: 5px;
+  height: 2.5rem;
+  cursor: pointer;
+}
+.submit:hover {
+  background: linear-gradient(270deg, rgb(86, 199, 255) 0%, rgb(144, 206, 161) 100%);
+  box-shadow: inset 0px 5px 10px 5px #01b4e4, inset 5px 10px 5px 0px #90cea1;
+  color: white;
+}
+
+.submitMessage {
+  background-color: #0d253f;
+  color: #01b4e4;
+  font-weight: bold;
+  border-radius: 5px;
+  height: 2.5rem;
+  margin: 2rem 0rem;
+  cursor: pointer;
+}
+.submitMessage:hover {
+  background: linear-gradient(270deg, rgb(86, 199, 255) 0%, rgb(144, 206, 161) 100%);
+  box-shadow: inset 0px 5px 10px 5px #01b4e4, inset 5px 10px 5px 0px #90cea1;
+  color: white;
+}
+
+.addLists {
+  background: transparent;
+  height: 7vh;
+  width: 20vw;
+  border-radius: 5px;
+  size: 5em;
+  cursor: pointer;
+}
+
+.banner {
+  width: 100%;
+  padding: 2.5rem 0rem 0rem 0rem;
+}
+.banner .bannerLink {
+  position: relative;
+  cursor: pointer;
+}
+.banner .bannerLink .imgContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 19/9;
+  margin: 0;
+  z-index: 0;
+}
+.banner .bannerLink .imgContainer .bannerImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 65%;
+  transition: opacity 0.2s ease-in-out;
+}
+.banner .bannerLink .bannerInfo {
+  width: 70%;
+  position: relative;
+  z-index: 1;
+  top: -20vw;
+  left: 40vw;
+  transform: translate(-50%, -50%);
+}
+.banner .bannerLink .bannerInfo:hover {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.banner .bannerLink .bannerInfo .overviewBanner {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.banner .bannerLink:hover .bannerImg {
+  opacity: 0.4;
+}
+
+@media screen and (min-width: 320px) and (max-width: 520px) {
+  .banner {
+    height: 85vh;
+    width: 100%;
+  }
+  .banner .bannerLink .imgContainer {
+    aspect-ratio: 8/9;
+  }
+  .banner .bannerLink .bannerInfo {
+    top: -75vw;
+  }
+  .banner .bannerLink .bannerInfo .overviewBanner {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 520px) and (max-width: 680px) {
+  .banner {
+    height: 85vh;
+    width: 100%;
+  }
+  .banner .bannerLink .imgContainer {
+    aspect-ratio: 9/9;
+  }
+  .banner .bannerLink .bannerInfo {
+    top: -85vw;
+  }
+  .banner .bannerLink .bannerInfo .overviewBanner {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 470px) and (max-width: 520px) {
+  .banner {
+    height: 70vh;
+    width: 100%;
+  }
+  .banner .bannerLink .imgContainer {
+    aspect-ratio: 16/9;
+  }
+  .banner .bannerLink .bannerInfo {
+    top: -45vw;
+  }
+  .banner .bannerLink .bannerInfo .overviewBanner {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+.Trending {
+  z-index: 5;
+  top: 87%;
+  position: relative;
+  background-color: #0d253f;
+  margin-top: -15vw;
+  padding-top: 0.2%;
+}
+.Trending .trending {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+.Trending .trending .trendList {
+  display: flex;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  height: 33vh;
+}
+.Trending .trending .trendList::-webkit-scrollbar {
+  display: none;
+}
+.Trending .trending .trendList .movieItem {
+  position: relative;
+  margin-left: 1%;
+}
+.Trending .trending .trendList .movieItem .movie {
+  flex: 0 0 auto;
+  height: 30vh;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+}
+.Trending .trending .trendList .movieItem .infoIndMovie {
+  position: absolute;
+  top: 60%;
+  margin-bottom: 0;
+  width: 90%;
+  opacity: 0;
+}
+.Trending .trending .trendList .movieItem .infoIndMovie .titleMovie {
+  margin-bottom: 2%;
+  margin-right: 5%;
+  margin-left: 7%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.Trending .trending .trendList .movieItem .infoIndMovie .normalText {
+  margin-top: 5%;
+  text-align: right;
+}
+.Trending .trending .trendList .movieItem:hover .movie {
+  opacity: 0.2;
+}
+.Trending .trending .trendList .movieItem:hover .infoIndMovie {
+  opacity: 1;
+}
+
+@media screen and (min-width: 420px) and (max-width: 680px) {
+  .Trending {
+    top: -18vh;
+  }
+  .Trending .trending .trendList {
+    height: 27vh;
+  }
+  .Trending .trending .trendList .movieItem .movie {
+    height: 25vh;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 420px) {
+  .Trending {
+    top: -25vh;
+  }
+  .Trending .trending .trendList {
+    height: 27vh;
+  }
+  .Trending .trending .trendList .movieItem .movie {
+    height: 25vh;
+  }
+}
+@media screen and (min-width: 680px) and (max-width: 768px) {
+  .Trending {
+    top: -5vh;
+  }
+  .Trending .trending .trendList {
+    height: 27vh;
+  }
+  .Trending .trending .trendList .movieItem .movie {
+    height: 25vh;
+  }
+}
+.individualCards .imageAndButtons .image-container {
+  position: relative;
+}
+.individualCards .imageAndButtons .image-container .indCard {
+  position: relative;
+  aspect-ratio: 16/9;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 0;
+}
+.individualCards .imageAndButtons .image-container .watchlist-overlay {
+  position: absolute;
+  top: 80%;
+}
+.individualCards .imageAndButtons .image-container .watchlist-overlay .lists {
+  display: flex;
+  flex-direction: row;
+  gap: 7vw;
+  margin-left: 3vw;
+}
+.individualCards .imageAndButtons .image-container .watchlist-overlay .lists .addLists .faLists {
+  font-size: 120%;
+}
+.individualCards .imageAndButtons:hover .indCard {
+  opacity: 0.4;
+}
+.individualCards .info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+  margin: 1rem 2rem 1rem 2rem;
+  border-bottom: 1px grey solid;
+}
+.individualCards .info .specificInfos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.individualCards .info .specificInfos .time {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  width: 40%;
+}
+.individualCards .info .specificInfos .time .timer {
+  width: 1.3rem;
+  filter: invert(1);
+}
+.individualCards .info .specificInfos .infoMovie {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  width: 20%;
+}
+.individualCards .info .specificInfos .infoMovie .rating {
+  width: 1.3rem;
+  filter: invert(1);
+}
+.individualCards .release {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 1rem;
+  margin: 0rem 2rem 1rem 2rem;
+  border-bottom: 1px grey solid;
+  justify-content: center;
+  gap: 15%;
+}
+.individualCards .release .releaseDate {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+.individualCards .synopsis {
+  text-align: center;
+  padding-bottom: 2rem;
+  margin: 1rem 2rem 1rem 2rem;
+  border-bottom: 1px grey solid;
+  justify-content: center;
+  gap: 15%;
+}
+.individualCards .synopsis p {
+  margin: 0% 20% 0% 20%;
+}
+
+.sameGenre {
+  box-sizing: border-box;
+  padding-top: 2rem;
+  width: 98%;
+}
+.sameGenre h3 {
+  padding: 1rem;
+}
+.sameGenre .ListGenre {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.sameGenre .ListGenre .movieItem {
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: 5%;
+  margin-bottom: 10%;
+  cursor: pointer;
+}
+.sameGenre .ListGenre .movieItem .movie {
+  flex: 0 0 auto;
+  height: 100%;
+  width: 100%;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+}
+.sameGenre .ListGenre .movieItem .infoIndMovie {
+  position: absolute;
+  top: 60%;
+  margin-bottom: 0;
+  width: 100%;
+  opacity: 0;
+  left: -5%;
+}
+.sameGenre .ListGenre .movieItem .infoIndMovie .titleMovie {
+  font-size: 1rem;
+  margin-bottom: 2%;
+  margin-right: 5%;
+  margin-left: 7%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sameGenre .ListGenre .movieItem .infoIndMovie .normalText {
+  margin-top: 5%;
+  text-align: right;
+}
+.sameGenre .ListGenre .movieItem:hover .movie {
+  opacity: 0.2;
+}
+.sameGenre .ListGenre .movieItem:hover .infoIndMovie {
+  opacity: 1;
+}
+
+.Similars {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-bottom: 10%;
+}
+.Similars .simMovies {
+  display: flex;
+  flex-direction: column;
+}
+.Similars .simMovies .whatToWatch {
+  display: flex;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  height: 33vh;
+  cursor: pointer;
+}
+.Similars .simMovies .whatToWatch::-webkit-scrollbar {
+  display: none;
+}
+.Similars .simMovies .whatToWatch .movieItem {
+  position: relative;
+  margin-left: 1%;
+}
+.Similars .simMovies .whatToWatch .movieItem .movie {
+  flex: 0 0 auto;
+  height: 30vh;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+}
+.Similars .simMovies .whatToWatch .movieItem .infoIndMovie {
+  position: absolute;
+  top: 55%;
+  margin-bottom: 0;
+  width: 90%;
+  opacity: 0;
+}
+.Similars .simMovies .whatToWatch .movieItem .infoIndMovie .titleMovie {
+  margin-bottom: 2%;
+  margin-right: 5%;
+  margin-left: 7%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.Similars .simMovies .whatToWatch .movieItem .infoIndMovie .normalText {
+  margin-top: 5%;
+  text-align: right;
+}
+.Similars .simMovies .whatToWatch .movieItem:hover .movie {
+  opacity: 0.2;
+}
+.Similars .simMovies .whatToWatch .movieItem:hover .infoIndMovie {
+  opacity: 1;
+}
+
+.navbar {
+  z-index: 15;
+  position: fixed;
+  background: #0d253f;
+  width: 100%;
+}
+.navbar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar nav .menu-container .navigation .listnav {
+  display: flex;
+  gap: 3rem;
+  padding: 0;
+  margin: 1rem 2rem;
+}
+.navbar nav .menu-container .navigation .listnav li .navbarlogo {
+  width: 100px;
+}
+.navbar nav .menu-container .navigation .listnav .selectGenres {
+  background-color: #0d253f;
+  border: transparent;
+  cursor: pointer;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+.burger div {
+  width: 2rem;
+  height: 0.25rem;
+  background: #333;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    margin: 0rem 0rem 2rem 0rem;
+    padding: 1rem 0rem;
+  }
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar nav .navigation .listnav {
+    transform: translateX(-120%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+    top: 3rem;
+  }
+  .navbar nav .navigation .listnav.open {
+    transform: translateX(0);
+    background-color: #0d253f;
+    padding: 0rem 1rem 1rem 1rem;
+    margin: 0;
+    gap: 1rem;
+  }
+  .navbar nav .navigation .listnav.open a p {
+    margin: 0;
+  }
+  .burger {
+    display: flex;
+  }
+  .burger .burgerLogo {
+    width: 20vw;
+  }
+}
+.listOfGenre .genresListing {
+  display: flex;
+  flex-direction: row;
+}
+.listOfGenre .genresListing .genreListed {
+  min-width: 100%;
+  display: flex;
+  flex-direction: scroll;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.listOfGenre .genresListing .genreListed::-webkit-scrollbar {
+  display: none;
+}
+.listOfGenre .genresListing .genreListed .movieItem {
+  position: relative;
+  margin-left: 1%;
+}
+.listOfGenre .genresListing .genreListed .movieItem .movie {
+  flex: 1 0 auto;
+  height: 30vh;
+  padding-right: 10px;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+}
+.listOfGenre .genresListing .genreListed .movieItem .infoIndMovie {
+  position: absolute;
+  top: 70%;
+  margin-bottom: 0;
+  width: 90%;
+  opacity: 0;
+}
+.listOfGenre .genresListing .genreListed .movieItem .infoIndMovie .titleMovie {
+  margin-bottom: 2%;
+  margin-right: 5%;
+  margin-left: 7%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.listOfGenre .genresListing .genreListed .movieItem .infoIndMovie .normalText {
+  margin-top: 5%;
+  text-align: right;
+}
+.listOfGenre .genresListing .genreListed .movieItem:hover .movie {
+  opacity: 0.2;
+}
+.listOfGenre .genresListing .genreListed .movieItem:hover .infoIndMovie {
+  opacity: 1;
+}
+
+.SecondBanner {
+  width: 100%;
+}
+.SecondBanner .bannerLink {
+  position: relative;
+  cursor: pointer;
+}
+.SecondBanner .bannerLink .imgContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 19/9;
+  margin: 0;
+  z-index: 0;
+}
+.SecondBanner .bannerLink .imgContainer .bannerImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 65%;
+  transition: opacity 0.2s ease-in-out;
+}
+.SecondBanner .bannerLink .bannerInfo {
+  width: 70%;
+  position: relative;
+  z-index: 1;
+  top: -20vw;
+  left: 40vw;
+  transform: translate(-50%, -50%);
+}
+.SecondBanner .bannerLink .bannerInfo:hover {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.SecondBanner .bannerLink .bannerInfo .overviewBanner {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.SecondBanner .bannerLink:hover .bannerImg {
+  opacity: 0.4;
+}
+
+@media screen and (min-width: 520px) and (max-width: 680px) {
+  .SecondBanner {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    top: -50%;
+  }
+  .SecondBanner .bannerLink {
+    top: -7rem;
+  }
+  .SecondBanner .bannerLink .imgContainer {
+    aspect-ratio: 9/9;
+  }
+  .SecondBanner .bannerLink .bannerInfo {
+    top: -47vw;
+  }
+  .SecondBanner .bannerLink .bannerInfo .overviewBanner {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 470px) {
+  .SecondBanner {
+    height: 70vh;
+    width: 100%;
+    top: -20%;
+  }
+  .SecondBanner .bannerLink {
+    top: -10rem;
+  }
+  .SecondBanner .bannerLink .imgContainer {
+    aspect-ratio: 8/9;
+  }
+  .SecondBanner .bannerLink .bannerInfo {
+    top: -65vw;
+  }
+  .SecondBanner .bannerLink .bannerInfo .overviewBanner {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 470px) and (max-width: 520px) {
+  .SecondBanner {
+    height: 70vh;
+    width: 100%;
+    top: -20%;
+  }
+  .SecondBanner .bannerLink {
+    top: -10rem;
+  }
+  .SecondBanner .bannerLink .imgContainer {
+    aspect-ratio: 9/9;
+  }
+  .SecondBanner .bannerLink .bannerInfo {
+    top: -55vw;
+  }
+  .SecondBanner .bannerLink .bannerInfo .overviewBanner {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+.footer {
+  border-top: 2px grey solid;
+  margin: 0rem 2rem 0rem 2rem;
+  margin-top: 2rem;
+}
+.footer .socialNetwork {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  padding-left: 0px;
+}
+.footer .socialNetwork li {
+  list-style-type: none;
+  height: 52px;
+  width: 5%;
+}
+.footer .socialNetwork li a {
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+}
+.footer .socialNetwork li .fa {
+  font-size: 48px;
+  color: #01b4e4;
+}
+.footer .socialNetwork li .footerLogo {
+  width: 110px;
+}
+.footer .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .links .use {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+.footer .links .use li {
+  list-style-type: none;
+}
+.footer .links .use li a {
+  text-decoration: none;
+}
+.footer .links .use li a p {
+  background: linear-gradient(90deg, #01b4e4, #90cea1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-align: left;
+}
+.footer .links .aboutDev {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+.footer .links .aboutDev li {
+  list-style-type: none;
+}
+.footer .links .aboutDev li a {
+  text-decoration: none;
+}
+.footer .links .aboutDev li a p {
+  background: linear-gradient(90deg, #01b4e4, #90cea1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+.footer .links .account {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+.footer .links .account li {
+  list-style-type: none;
+}
+.footer .links .account li a {
+  text-decoration: none;
+}
+.footer .links .account li a p {
+  background: linear-gradient(90deg, #01b4e4, #90cea1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.Search {
+  margin-right: 2rem;
+}
+.Search .form .research {
+  background: none;
+  border: none;
+  border-bottom: white 1px solid;
+  color: white;
+}
+
+.results {
+  box-sizing: border-box;
+  padding-top: 2rem;
+  width: 98%;
+}
+.results h2 {
+  padding: 1rem;
+}
+.results .resultsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.results .resultsList .movieItem {
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: 5%;
+  margin-bottom: 10%;
+  cursor: pointer;
+}
+.results .resultsList .movieItem .movie {
+  flex: 0 0 auto;
+  height: 100%;
+  width: 100%;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+}
+.results .resultsList .movieItem .infoIndMovie {
+  position: absolute;
+  top: 70%;
+  margin-bottom: 0;
+  width: 100%;
+  opacity: 0;
+  left: -2%;
+}
+.results .resultsList .movieItem .infoIndMovie .titleMovie {
+  font-size: 1rem;
+  margin-bottom: 2%;
+  margin-right: 5%;
+  margin-left: 7%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.results .resultsList .movieItem .infoIndMovie .normalText {
+  margin-top: 5%;
+  text-align: right;
+}
+.results .resultsList .movieItem:hover .movie {
+  opacity: 0.2;
+}
+.results .resultsList .movieItem:hover .infoIndMovie {
+  opacity: 1;
+}
+
+.loginRegister {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0rem 2rem;
+}
+.loginRegister .loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.loginRegister .loginForm .errorMessage {
+  color: red;
+  font-weight: bold;
+}
+.loginRegister .loginForm label {
+  color: white;
+}
+
+.profileInformations {
+  margin: 0rem 2rem;
+}
+
+.contactUs {
+  padding: 3rem 2rem;
+}
+.contactUs .contactForm {
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px 0px;
+  margin: 2rem;
+}
+.contactUs .contactForm .formContact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem;
+}
+.contactUs .contactForm label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  color: white;
+}
+.contactUs .contactForm label #message {
+  height: 5rem;
+}
+
+@media screen and (min-width: 764px) {
+  .contactUs .contactForm {
+    max-width: 70vw;
+  }
+}/*# sourceMappingURL=Style.css.map */

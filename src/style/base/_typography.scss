@@ -1,0 +1,377 @@
+.App {
+    .Trending {
+        .trends {
+            background: linear-gradient(180deg, #01b4e4, #90cea1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            overflow-x: hidden;
+            padding: 0rem 1rem;
+        }
+
+        .trending {
+            .trendList {
+                .infoIndMovie {
+                    .titleMovie {
+                        color: #01b4e4;
+                        font-size: 1rem;;
+                    }
+                    .normalText {
+                        color: #90cea1;
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar {
+    ul {
+        li {
+            display: flex;
+            flex-direction: row;
+            background: linear-gradient(90deg, #01b4e4, #90cea1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+        .selectGenres {
+            display: flex;
+            flex-direction: row;
+            background: linear-gradient(90deg, #01b4e4, #90cea1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+    }
+}
+
+.simMovies {
+    .whatToWatch {
+        .movieItem {
+            a {
+                text-decoration: none;
+                &:visited {
+                    color: inherit;
+                }
+            }
+            .infoIndMovie {
+                .titleMovie {
+                    color: #01b4e4;
+                    font-size: 1rem;
+                }
+                .normalText {
+                    color: #90cea1;
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+}
+
+.listOfGenre {
+    a { 
+        text-decoration: none;
+        .titleGenre {
+            background: linear-gradient(180deg, #01b4e4, #90cea1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+        }
+    }
+
+    .genresListing {
+        .genreListed {
+            .movieItem {
+                a {
+                    text-decoration: none;
+                    &:visited {
+                        color: inherit; 
+                    }
+                }
+                .infoIndMovie {
+                    .titleMovie {
+                        color: #01b4e4;
+                        font-size: 1rem;
+                    }
+                    .normalText {
+                        color: #90cea1;
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sameGenre {
+    .titleGenre {
+        background: linear-gradient(180deg, #01b4e4, #90cea1);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .ListGenre {
+        .movieItem {
+            a {
+                text-decoration: none;
+                &:visited {
+                    color: inherit; 
+                }
+            }
+            .infoIndMovie {
+                .titleMovie {
+                    color: #01b4e4;
+                    font-size: 1rem;
+                }
+                .normalText {
+                    color: #90cea1;
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+}
+
+.individualCards {
+    .info {
+        .titleMovie {
+            background: linear-gradient(180deg, #01b4e4, #90cea1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2rem;
+            margin-bottom: 0
+        }
+        .specificInfos {
+            color: white;
+        }
+    }
+
+    .release {
+        color: white;
+    }
+
+    .synopsis {
+        h4 {
+            background: linear-gradient(180deg, #01b4e4, #90cea1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 1.8rem;
+        }
+        p {
+            color: white;
+            text-align: justify;
+        }
+    }
+    .Similars {
+        h2 {
+            background: linear-gradient(180deg, #01b4e4, #90cea1);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.banner {
+    .bannerLink {
+        text-decoration: none;
+        .bannerInfo {
+            color: white;
+            
+            .bannerTitle {
+                font-size: 2rem;
+            }
+    
+            .infos {
+                font-size: 1rem;
+
+                .color {
+                    color: rgb(0, 255, 0);
+                    font-weight: bold;
+                }
+            }
+
+            .overviewBanner {
+                font-size: 0.8rem;
+            } 
+        }
+    }
+    
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .App {
+        .banner {
+            .bannerLink {
+                text-decoration: none;
+                .bannerInfo {             
+                    .bannerTitle {
+                        font-size: 2rem;
+                    }
+                
+                    .infos {
+                        font-size: 1rem;
+                    }
+            
+                    .overviewBanner {
+                        font-size: 1rem;
+                    } 
+                }
+            }
+        }
+    }
+}
+
+.SecondBanner {
+    .bannerLink {
+        text-decoration: none;
+        .bannerInfo {
+            color: white;
+            
+            .bannerTitle {
+                font-size: 2rem;
+            }
+    
+            .infos {
+                font-size: 1rem;
+
+                .color {
+                    color: rgb(0, 255, 0);
+                    font-weight: bold;
+                }
+            }
+
+            .overviewBanner {
+                font-size: 0.8rem;
+            } 
+        }
+    }
+    
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .App {
+        .SecondBanner {
+            .bannerLink {
+                text-decoration: none;
+                .bannerInfo {             
+                    .bannerTitle {
+                        font-size: 2rem;
+                    }
+                
+                    .infos {
+                        font-size: 1rem;
+                    }
+            
+                    .overviewBanner {
+                        font-size: 1rem;
+                    } 
+                }
+            }
+        }
+    }
+}
+
+.results {
+    h2 {
+        background: linear-gradient(180deg, #01b4e4, #90cea1);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.8rem;
+    }
+
+    .resultsList {
+        .movieItem {
+            a {
+                text-decoration: none;
+                &:visited {
+                    color: inherit; 
+                }
+            }
+            .infoIndMovie {
+                .titleMovie {
+                    color: #01b4e4;
+                    font-size: 1rem;
+                }
+                .normalText {
+                    color: #90cea1;
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+}
+
+.contactUs {
+    .contact {
+        background: linear-gradient(180deg, #01b4e4, #90cea1);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.8rem;
+    }
+    .contactForm {
+        .formContact {
+            .errorMessage {
+                font-weight: bold;
+                color: red;
+            }
+        }
+    }
+}
+
+
+.titleLogin{
+    background: linear-gradient(180deg, #01b4e4, #90cea1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.titleProfile {
+    background: linear-gradient(180deg, #01b4e4, #90cea1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+}
+
+.validated {
+    color: rgb(55, 165, 55);
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.infoProfile {
+    color: #01b4e4;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    .info {
+        color: #90cea1;
+        font-weight: normal;
+        font-size: 1.1rem;
+    }
+}
+
+.welcomeBack {
+    color: white;
+    font-size: 1.8rem;
+}

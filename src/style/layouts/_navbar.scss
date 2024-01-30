@@ -1,0 +1,106 @@
+.navbar {
+    z-index: 15;
+    position: fixed;
+    background: #0d253f;
+    width: 100%;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .menu-container {
+
+            .navigation {        
+                .listnav {
+                    display: flex;
+                    gap: 3rem;
+                    padding: 0;
+                    margin: 1rem 2rem;
+                    
+                    li {
+                        .navbarlogo {
+                            width: 100px;
+                        }
+                    }
+            
+                    .selectGenres {
+                        background-color: #0d253f;
+                        border: transparent;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }    
+    }
+}
+    
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+
+    div {
+        width: 2rem;
+        height: 0.25rem;
+        background: #333; // Change this to match your design
+        border-radius: 10px;
+        transition: all 0.3s linear;
+        position: relative;
+        transform-origin: 1px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        margin: 0rem 0rem 2rem 0rem;
+        padding: 1rem 0rem;
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .navigation {
+                .listnav {
+                    transform: translateX(-120%);
+                    transition: transform 0.3s ease-in-out;
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    z-index:10;
+                    top: 3rem;
+                }
+    
+                .listnav.open {
+                    transform: translateX(0);
+                    background-color: #0d253f;
+                    padding: 0rem 1rem 1rem 1rem;
+                    margin: 0;
+                    gap: 1rem;
+                
+                    a {
+                        p {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }        
+    }
+
+    .burger {
+        display: flex;
+        .burgerLogo {
+            width: 20vw;
+        }
+    }
+}
+
