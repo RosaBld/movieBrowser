@@ -16,12 +16,14 @@
             .watchlist-overlay {
                 position: absolute;
                 top: 80%;
+                width: 100%;
 
                 .lists {
                     display: flex;
                     flex-direction: row;
                     gap: 7vw;
                     margin-left: 3vw;
+                    width: 50%;
                 }
             }
         }

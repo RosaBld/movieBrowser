@@ -697,7 +697,7 @@ template {
 .addLists {
   background: transparent;
   height: 7vh;
-  width: 20vw;
+  width: 35%;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -909,12 +909,14 @@ template {
 .individualCards .imageAndButtons .image-container .watchlist-overlay {
   position: absolute;
   top: 80%;
+  width: 100%;
 }
 .individualCards .imageAndButtons .image-container .watchlist-overlay .lists {
   display: flex;
   flex-direction: row;
   gap: 7vw;
   margin-left: 3vw;
+  width: 50%;
 }
 .individualCards .imageAndButtons:hover .indCard {
   opacity: 0.4;
