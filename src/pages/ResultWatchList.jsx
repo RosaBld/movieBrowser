@@ -16,7 +16,7 @@ export function ResultWatchList({ isLoggedIn }) {
         const fetchMovies = async () => {
             if (isLoggedIn) {
                 const result = await ListWatch();
-                setMovie(result.results);
+                setMovie(result);
             } else {
                 setMovie([]);
             }
@@ -24,6 +24,7 @@ export function ResultWatchList({ isLoggedIn }) {
 
         fetchMovies();
     }, [isLoggedIn]);
+
 
     const openModal = (movie) => {
         setSelectedMovie(movie);
@@ -38,17 +39,21 @@ export function ResultWatchList({ isLoggedIn }) {
     return (
         <div className="results">
             <h2 className="">My Watch List:</h2>
-            <div className="resultsList">
-                {movie.map(movie => (
-                    <div className="movieItem" key={movie.id}>
-                        <img className="movie" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} onClick={() => openModal(movie)} />
-                        <div className="infoIndMovie">
-                            <h3 className="titleMovie">{movie.title}</h3>
-                            <p className="normalText">{movie.vote_average} | ({convertDateFormat(movie.release_date)})</p>
+            {isLoggedIn ? ( 
+                <div className="resultsList">
+                    {movie.map(movie => (
+                        <div className="movieItem" key={movie.id}>
+                            <img className="movie" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} onClick={() => openModal(movie)} />
+                            <div className="infoIndMovie">
+                                <h3 className="titleMovie">{movie.title}</h3>
+                                <p className="normalText">{movie.vote_average} | ({convertDateFormat(movie.release_date)})</p>
+                            </div>
                         </div>
-                    </div>
-                ))}
-            </div>
+                    ))}
+                </div>
+            ) : (
+                <h2>You need to be connected to see your watchlist!</h2>
+            )}            
             <Modal 
                 isOpen={modalIsOpen} 
                 onRequestClose={closeModal} 
@@ -97,5 +102,6 @@ export function ResultWatchList({ isLoggedIn }) {
 }
 
 ResultWatchList.propTypes = {
-    isLoggedIn: PropTypes.bool.isRequired,
+    isLoggedIn: PropTypes.bool,
+    isLoggedOut: PropTypes.bool,
 };

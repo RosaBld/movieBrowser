@@ -42,7 +42,7 @@ export function WatchLists({ movieId }) {
     useEffect (() => {
         const fetchMovies = async () => {
             const result = await ListWatch();
-            setWatchlist(result.results);
+            setWatchlist(result);
         };
     
         fetchMovies();
@@ -77,7 +77,7 @@ export function WatchLists({ movieId }) {
     useEffect (() => {
         const fetchMovies = async () => {
             const result = await ListFavorite();
-            setFavoriteList(result.results);
+            setFavoriteList(result);
         };
     
         fetchMovies();

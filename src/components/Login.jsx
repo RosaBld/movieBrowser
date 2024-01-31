@@ -3,12 +3,14 @@ import Modal from 'react-modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faX, faFaceSmile } from '@fortawesome/free-solid-svg-icons';
 import { RequestToken, CreateSession, ValidateToken, GetAccountDetails } from '../utilities/request';
-import PropTypes from 'prop-types';
+import { useLoginSession } from '../utilities/LogginSession';
 
 export function Login() {
+
+    const { isLoggedIn, setIsLoggedIn, user, setUser } = useLoginSession();
+
     const [modalIsOpen, setModalIsOpen] = useState(false);
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
-    const [user, setUser] = useState(null);
+    // const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [token, setToken] = useState(null);
@@ -30,7 +32,7 @@ export function Login() {
 
             sessionStorage.setItem('token', token);
 
-            window.location.href = `https://www.themoviedb.org/authenticate/${token}?redirect_to=https://movie-browser-mocha.vercel.app/`;
+            window.location.href = `https://www.themoviedb.org/authenticate/${token}?redirect_to=http://localhost:5173/`;
 
         } catch (error) {
             console.error(error);
@@ -88,10 +90,9 @@ export function Login() {
         if (sessionId) {
             setIsLoggedIn(true);
         }
-    }, []);
+    }, [setIsLoggedIn]);
 
     const handleLogout = () => {
-        
         sessionStorage.removeItem('sessionId');
         sessionStorage.removeItem('requestToken');
         sessionStorage.removeItem('username');
@@ -218,11 +219,3 @@ export function Login() {
         </div>
     );
 }
-
-Login.propTypes = {
-    displayName: PropTypes.string,
-    isLoggedIn: PropTypes.bool,
-    setIsLoggedIn: PropTypes.func,
-    user: PropTypes.object,
-    setUser: PropTypes.func,
-  };

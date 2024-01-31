@@ -12,11 +12,13 @@ import { useState, useEffect } from 'react';
 import { ResultWatchList } from './pages/ResultWatchList';
 import { ResultFavoriteMovies } from './pages/ResultFavoritesList';
 
+import { useLoginSession } from './utilities/LogginSession';
+
 function App() {
   const location= useLocation();
 
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [user, setUser] = useState(null);
+  const { isLoggedIn, setIsLoggedIn, user, setUser } = useLoginSession();
+
   const [sessionId, setSessionId] = useState(null);
   const [accountId, setAccountId] = useState(null);
 
@@ -26,7 +28,9 @@ function App() {
 
     setSessionId(storedSessionId);
     setAccountId(storedAccountId);
-  }, []);
+
+    setIsLoggedIn(!!storedSessionId && !!storedAccountId);
+  }, [setIsLoggedIn]);
 
 
   return (
@@ -37,8 +41,8 @@ function App() {
         <Route path="/Genre/:id" element={<GenreList />} />
         <Route path="/results" element={<ResultsPage />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/watchlist" element={<ResultWatchList />} isLoggedIn={isLoggedIn} />
-        <Route path="/favorites" element={<ResultFavoriteMovies />} isLoggedIn={isLoggedIn} />
+        <Route path="/watchlist" element={<ResultWatchList isLoggedIn={isLoggedIn} />} />
+        <Route path="/favorites" element={<ResultFavoriteMovies isLoggedIn={isLoggedIn} />} />
       </Routes>
       <Footer />
     </div>

@@ -353,7 +353,7 @@ export const ListWatch = async () => {
     }
 
     const data = await response.json();
-    return data;
+    return data.results;
 }
 
 export const Favorite = async (accountId, movieId) => {
@@ -422,5 +422,5 @@ export const ListFavorite = async () => {
     }
 
     const data = await response.json();
-    return data;
+    return data.results;
 }
