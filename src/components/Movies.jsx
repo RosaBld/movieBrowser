@@ -71,18 +71,7 @@ export function ThisWeek() {
                 {selectedMovie && (
                     <div>
                         <Cards movieId={selectedMovie.id} />
-                        <button style={{
-                            position: 'fixed', 
-                            top: '10px', 
-                            right: '10px',
-                            background: '#0d253f',
-                            color: 'white',
-                            border: '1px solid lightsteelblue', 
-                            borderRadius: '4px', 
-                            width: '5%', 
-                            height: '6%',
-                            cursor: 'pointer',
-                        }} onClick={closeModal}>
+                        <button className="close" onClick={closeModal}>
                             <FontAwesomeIcon icon={faX} className="faClose"/>
                         </button>
                     </div>
@@ -156,18 +145,7 @@ export function Today() {
                 {selectedMovie && (
                     <div>
                         <Cards movieId={selectedMovie.id} />
-                        <button style={{
-                            position: 'fixed', 
-                            top: '10px', 
-                            right: '10px',
-                            background: '#0d253f',
-                            color: 'white',
-                            border: '1px solid lightsteelblue', 
-                            borderRadius: '4px', 
-                            width: '5%', 
-                            height: '6%',
-                            cursor: 'pointer',
-                        }} onClick={closeModal}>
+                        <button className="close" onClick={closeModal}>
                             <FontAwesomeIcon icon={faX} className="faClose" />
                         </button>
                     </div>
@@ -239,18 +217,7 @@ export function Upcoming() {
                 {selectedMovie && (
                     <div>
                         <Cards movieId={selectedMovie.id} />
-                        <button style={{
-                            position: 'fixed', 
-                            top: '10px', 
-                            right: '10px',
-                            background: '#0d253f',
-                            color: 'white',
-                            border: '1px solid lightsteelblue', 
-                            borderRadius: '4px', 
-                            width: '5%', 
-                            height: '6%',
-                            cursor: 'pointer',
-                        }} onClick={closeModal}>
+                        <button className="close" onClick={closeModal}>
                             <FontAwesomeIcon icon={faX} className="faClose" />
                         </button>
                     </div>
@@ -322,18 +289,7 @@ export function Popular() {
                 {selectedMovie && (
                     <div>
                         <Cards movieId={selectedMovie.id} />
-                        <button style={{
-                            position: 'fixed', 
-                            top: '10px', 
-                            right: '10px',
-                            background: '#0d253f',
-                            color: 'white',
-                            border: '1px solid lightsteelblue', 
-                            borderRadius: '4px', 
-                            width: '5%', 
-                            height: '6%',
-                            cursor: 'pointer',
-                        }} onClick={closeModal}>
+                        <button className="close" onClick={closeModal}>
                             <FontAwesomeIcon icon={faX} className="faClose" />
                         </button>
                     </div>
@@ -402,18 +358,7 @@ export function NowPlaying() {
                         }}
                     >
                         <Cards movieId={movie.id} />
-                        <button style={{
-                            position: 'fixed', 
-                            top: '10px', 
-                            right: '10px',
-                            background: '#0d253f',
-                            color: 'white',
-                            border: '1px solid lightsteelblue', 
-                            borderRadius: '4px', 
-                            width: '5%', 
-                            height: '6%',
-                            cursor: 'pointer',
-                        }} onClick={closeModal}>
+                        <button className="close" onClick={closeModal}>
                             <FontAwesomeIcon icon={faX} className="faClose" />
                         </button>
                     </Modal>

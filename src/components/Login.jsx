@@ -144,18 +144,7 @@ export function Login() {
                         </div>
                         <button 
                         onClick={closeModal}
-                        style={{
-                            position: 'fixed', 
-                            top: '10px', 
-                            right: '10px',
-                            background: '#0d253f',
-                            color: 'white',
-                            border: '1px solid lightsteelblue', 
-                            borderRadius: '4px', 
-                            width: '5%', 
-                            height: '6%',
-                            cursor: 'pointer',
-                        }}
+                        className="close"
                         >
                             <FontAwesomeIcon icon={faX} className="faClose" />
                         </button>
@@ -198,18 +187,7 @@ export function Login() {
                             </div>
                         <button 
                         onClick={closeModal}
-                        style={{
-                            position: 'fixed', 
-                            top: '10px', 
-                            right: '10px',
-                            background: '#0d253f',
-                            color: 'white',
-                            border: '1px solid lightsteelblue', 
-                            borderRadius: '4px', 
-                            width: '5%', 
-                            height: '6%',
-                            cursor: 'pointer',
-                        }}
+                        className="close"
                         >
                             <FontAwesomeIcon icon={faX} className="faClose" />
                         </button>

@@ -101,18 +101,7 @@ useEffect(() => {
                 {selectedMovie && (
                     <div>
                         <Cards movieId={selectedMovie.id} />
-                        <button style={{
-                            position: 'fixed', 
-                            top: '10px', 
-                            right: '10px',
-                            background: '#0d253f',
-                            color: 'white',
-                            border: '1px solid lightsteelblue', 
-                            borderRadius: '4px', 
-                            width: '5%', 
-                            height: '6%',
-                            cursor: 'pointer',
-                        }} onClick={closeModal}>
+                        <button className="close" onClick={closeModal}>
                             <FontAwesomeIcon icon={faX} className="faClose" />
                         </button>
                     </div>
