@@ -1130,6 +1130,9 @@ template {
 }
 
 @media screen and (max-width: 480px) {
+  .sameGenre .ListGenre .movieItem {
+    margin-left: 2%;
+  }
   .sameGenre .ListGenre .movieItem .movie {
     margin-right: 0px;
   }
@@ -1710,6 +1713,9 @@ template {
 }
 
 @media screen and (max-width: 480px) {
+  .results .resultsList .movieItem {
+    margin-left: 2%;
+  }
   .results .resultsList .movieItem .movie {
     margin-right: 0px;
   }
