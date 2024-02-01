@@ -1129,6 +1129,11 @@ template {
   opacity: 1;
 }
 
+@media screen and (max-width: 480px) {
+  .sameGenre .ListGenre .movieItem .movie {
+    margin-right: 0px;
+  }
+}
 .Similars {
   margin-left: 2.5%;
   margin-right: 2.5%;
