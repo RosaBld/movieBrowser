@@ -9,3 +9,23 @@
         }
     }
 }
+
+@media screen and (min-width: 768px ) and (max-width: 850px) {
+    .Search {
+        .form {
+            .research {
+                width: 100px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Search {
+        .form {
+            .research {
+                width: 120px;
+            }
+        }
+    }
+}

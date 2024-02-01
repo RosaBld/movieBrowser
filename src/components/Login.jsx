@@ -32,7 +32,7 @@ export function Login() {
 
             sessionStorage.setItem('token', token);
 
-            window.location.href = `https://www.themoviedb.org/authenticate/${token}?redirect_to=http://localhost:5173/`;
+            window.location.href = `https://www.themoviedb.org/authenticate/${token}?redirect_to=https://movie-browser-mocha.vercel.app/`;
 
         } catch (error) {
             console.error(error);

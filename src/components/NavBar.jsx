@@ -77,12 +77,13 @@ export function NavBar({ isLoggedIn, setIsLoggedIn, user, setUser }) {
                                 </Link>
                             </li>
                             <li>
-                            <select onChange={handleListchange} className="selectGenres">
-                                <option className="choose" value="">- My Lists -</option>
-                                <option className="choose" value="watchlist">WatchList</option>
-                                <option className="choose" value="favorites">Favorites</option>
-                            </select>
+                                <select onChange={handleListchange} className="selectGenres">
+                                    <option className="choose" value="">- My Lists -</option>
+                                    <option className="choose" value="watchlist">WatchList</option>
+                                    <option className="choose" value="favorites">Favorites</option>
+                                </select>
                             </li>
+                            <li>
                                 <select onChange={handleGenreChange} value={selectedGenre} className="selectGenres">
                                     <option className="choose" value="">- Select genres -</option>
                                     {genres.genres && genres.genres.map((genre) =>
@@ -91,6 +92,7 @@ export function NavBar({ isLoggedIn, setIsLoggedIn, user, setUser }) {
                                         </option>
                                     )}
                                 </select>
+                            </li>
                             <li>
                                 <Login 
                                     isLoggedIn={isLoggedIn} 

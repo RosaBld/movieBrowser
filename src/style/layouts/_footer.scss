@@ -11,25 +11,32 @@
         list-style-type: none;
         padding-left: 0px;
         
-        li {
-            list-style-type: none;
-            height: 52px;
-            width: 5%;
-            
+
+        .listNet {
+            height: 35px;
+            width: 35px;
             a {
                 text-decoration: none;
                 height: 100%;
                 width: 100%;
-            }
+                .fa {
+                    font-size: 36px;
+                    color:#01b4e4;
+                }
+            }    
+        }
 
-            .fa {
-                font-size: 48px;
-                color:#01b4e4;
-            }
-
-            .footerLogo {
-                width: 110px;
-            }
+        .listLogo {
+            height: 80px;
+            width: 80px; 
+            a {
+                text-decoration: none;
+                height: 100%;
+                width: 100%;
+                .footerLogo {
+                    width: 80px;
+                }    
+            }            
         }
     }
 
@@ -106,6 +113,112 @@
             }
         }
     }
-    
 }
 
+@media screen and (max-width: 480px) {
+    .footer {
+        border-top: 2px grey solid;
+        margin: 0rem 2rem 0rem 2rem;
+        margin-top: 2rem;
+    
+        .socialNetwork {
+            margin-top: 2rem;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            list-style-type: none;
+            padding-left: 0px;
+            
+            .listNet {
+                height: 35px;
+                width: 35px;    
+                .fa {
+                    font-size: 36px;
+                    color:#01b4e4;
+                }
+            }
+
+            .listLogo {
+                height: 48px;
+                width: 80px;   
+                .footerLogo {
+                    width: 80px;
+                }          
+            }
+        }
+
+        .links {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+    
+            .use {
+                display:flex;
+                flex-direction: column;
+                padding-left: 0;
+    
+                li {
+                    list-style-type: none;
+                    
+                    a {
+                        text-decoration: none;
+                        
+                        p {
+                            background: linear-gradient(90deg, #01b4e4, #90cea1);
+                            -webkit-background-clip: text;
+                            background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            font-weight: bold;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+    
+            .aboutDev {
+                display:flex;
+                flex-direction: column;
+                padding-left: 0;
+    
+                li {
+                    list-style-type: none;
+                    
+                    a {
+                        text-decoration: none;
+                        
+                        p {
+                            background: linear-gradient(90deg, #01b4e4, #90cea1);
+                            -webkit-background-clip: text;
+                            background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+    
+            .account {
+                display:flex;
+                flex-direction: column;
+                padding-left: 0;
+    
+                li {
+                    list-style-type: none;
+                    
+                    a {
+                        text-decoration: none;
+    
+                        p {
+                            background: linear-gradient(90deg, #01b4e4, #90cea1);
+                            -webkit-background-clip: text;
+                            background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

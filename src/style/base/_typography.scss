@@ -380,3 +380,114 @@
     color: white;
     font-size: 1.8rem;
 }
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .use {
+        display:flex;
+        flex-direction: column;
+        padding-left: 0;
+
+        li {
+            list-style-type: none;
+            
+            a {
+                text-decoration: none;
+                
+                p {
+                    background: linear-gradient(90deg, #01b4e4, #90cea1);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-weight: bold;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .aboutDev {
+        display:flex;
+        flex-direction: column;
+        padding-left: 0;
+
+        li {
+            list-style-type: none;
+            
+            a {
+                text-decoration: none;
+                
+                p {
+                    background: linear-gradient(90deg, #01b4e4, #90cea1);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .account {
+        display:flex;
+        flex-direction: column;
+        padding-left: 0;
+
+        li {
+            list-style-type: none;
+            
+            a {
+                text-decoration: none;
+
+                p {
+                    background: linear-gradient(90deg, #01b4e4, #90cea1);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+@media screen {
+    .links {
+        .use {
+            li {
+                a {
+                    p {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+
+        .aboutDev {
+            li {
+                a {
+                    p {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+
+        .account {
+            li {
+                a {
+                    p {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+            .loginFooter {
+                font-size: 0.6rem;
+            }
+        }
+    }
+}

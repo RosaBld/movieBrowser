@@ -19,6 +19,7 @@
                     margin: 1rem 2rem;
                     
                     li {
+                        align-items: center;
                         .navbarlogo {
                             width: 100px;
                         }
@@ -28,6 +29,7 @@
                         background-color: #0d253f;
                         border: transparent;
                         cursor: pointer;
+                        padding: 0px;
                     }
                 }
             }

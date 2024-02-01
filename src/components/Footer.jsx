@@ -13,17 +13,17 @@ export function Footer({ setIsLoggedIn, isLoggedIn, setUser, user }) {
     return (
         <div className="footer">
             <ul className="socialNetwork">
-                <li>
+                <li className="listNet">
                     <a href="https://www.facebook.com/themoviedb/?locale=fr_FR" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faSquareFacebook} className="fa" />
                     </a>
                 </li>
-                <li>
+                <li className="listNet">
                     <a href="https://twitter.com/themoviedb" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faSquareXTwitter} className="fa" />
                     </a>
                 </li>
-                <li>
+                <li className="listLogo">
                     <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">
                         <img className="footerLogo" src='/logoFooter.svg' alt='logo_TMBD' />
                     </a>
@@ -78,7 +78,7 @@ export function Footer({ setIsLoggedIn, isLoggedIn, setUser, user }) {
                     </li>
                 </ul>
                 <ul className="account">
-                    <li>
+                    <li className="loginFooter">
                     <Login 
                         displayName={isLoggedIn ? 'Profile' : 'Login'}
                         isLoggedIn={isLoggedIn} 

@@ -590,6 +590,82 @@ template {
   font-size: 1.8rem;
 }
 
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.links .use {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+.links .use li {
+  list-style-type: none;
+}
+.links .use li a {
+  text-decoration: none;
+}
+.links .use li a p {
+  background: linear-gradient(90deg, #01b4e4, #90cea1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-align: left;
+}
+.links .aboutDev {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+.links .aboutDev li {
+  list-style-type: none;
+}
+.links .aboutDev li a {
+  text-decoration: none;
+}
+.links .aboutDev li a p {
+  background: linear-gradient(90deg, #01b4e4, #90cea1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+.links .account {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+.links .account li {
+  list-style-type: none;
+}
+.links .account li a {
+  text-decoration: none;
+}
+.links .account li a p {
+  background: linear-gradient(90deg, #01b4e4, #90cea1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+@media screen {
+  .links .use li a p {
+    font-size: 0.6rem;
+  }
+  .links .aboutDev li a p {
+    font-size: 0.6rem;
+  }
+  .links .account li a p {
+    font-size: 0.6rem;
+  }
+  .links .account .loginFooter {
+    font-size: 0.6rem;
+  }
+}
 @media screen and (max-width: 448px) {
   .btnGenre {
     border-radius: 50px;
@@ -637,6 +713,8 @@ template {
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   cursor: pointer;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .validate {
@@ -1126,6 +1204,9 @@ template {
   padding: 0;
   margin: 1rem 2rem;
 }
+.navbar nav .menu-container .navigation .listnav li {
+  align-items: center;
+}
 .navbar nav .menu-container .navigation .listnav li .navbarlogo {
   width: 100px;
 }
@@ -1133,6 +1214,7 @@ template {
   background-color: #0d253f;
   border: transparent;
   cursor: pointer;
+  padding: 0px;
 }
 
 .burger {
@@ -1368,22 +1450,30 @@ template {
   list-style-type: none;
   padding-left: 0px;
 }
-.footer .socialNetwork li {
-  list-style-type: none;
-  height: 52px;
-  width: 5%;
+.footer .socialNetwork .listNet {
+  height: 35px;
+  width: 35px;
 }
-.footer .socialNetwork li a {
+.footer .socialNetwork .listNet a {
   text-decoration: none;
   height: 100%;
   width: 100%;
 }
-.footer .socialNetwork li .fa {
-  font-size: 48px;
+.footer .socialNetwork .listNet a .fa {
+  font-size: 36px;
   color: #01b4e4;
 }
-.footer .socialNetwork li .footerLogo {
-  width: 110px;
+.footer .socialNetwork .listLogo {
+  height: 80px;
+  width: 80px;
+}
+.footer .socialNetwork .listLogo a {
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+}
+.footer .socialNetwork .listLogo a .footerLogo {
+  width: 80px;
 }
 .footer .links {
   display: flex;
@@ -1447,6 +1537,97 @@ template {
   font-weight: bold;
 }
 
+@media screen and (max-width: 480px) {
+  .footer {
+    border-top: 2px grey solid;
+    margin: 0rem 2rem 0rem 2rem;
+    margin-top: 2rem;
+  }
+  .footer .socialNetwork {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-left: 0px;
+  }
+  .footer .socialNetwork .listNet {
+    height: 35px;
+    width: 35px;
+  }
+  .footer .socialNetwork .listNet .fa {
+    font-size: 36px;
+    color: #01b4e4;
+  }
+  .footer .socialNetwork .listLogo {
+    height: 48px;
+    width: 80px;
+  }
+  .footer .socialNetwork .listLogo .footerLogo {
+    width: 80px;
+  }
+  .footer .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer .links .use {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .footer .links .use li {
+    list-style-type: none;
+  }
+  .footer .links .use li a {
+    text-decoration: none;
+  }
+  .footer .links .use li a p {
+    background: linear-gradient(90deg, #01b4e4, #90cea1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-align: left;
+  }
+  .footer .links .aboutDev {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .footer .links .aboutDev li {
+    list-style-type: none;
+  }
+  .footer .links .aboutDev li a {
+    text-decoration: none;
+  }
+  .footer .links .aboutDev li a p {
+    background: linear-gradient(90deg, #01b4e4, #90cea1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  .footer .links .account {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .footer .links .account li {
+    list-style-type: none;
+  }
+  .footer .links .account li a {
+    text-decoration: none;
+  }
+  .footer .links .account li a p {
+    background: linear-gradient(90deg, #01b4e4, #90cea1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+}
 .Search {
   margin-right: 2rem;
 }
@@ -1457,6 +1638,16 @@ template {
   color: white;
 }
 
+@media screen and (min-width: 768px) and (max-width: 850px) {
+  .Search .form .research {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Search .form .research {
+    width: 120px;
+  }
+}
 .results {
   box-sizing: border-box;
   padding-top: 2rem;
@@ -1513,6 +1704,11 @@ template {
   opacity: 1;
 }
 
+@media screen and (max-width: 480px) {
+  .results .resultsList .movieItem .movie {
+    margin-right: 0px;
+  }
+}
 .loginRegister {
   display: flex;
   flex-direction: column;
