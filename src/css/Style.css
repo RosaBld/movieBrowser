@@ -652,7 +652,7 @@ template {
   font-weight: bold;
 }
 
-@media screen {
+@media screen and (max-width: 532px) {
   .links .use li a p {
     font-size: 0.6rem;
   }
