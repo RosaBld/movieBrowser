@@ -12,7 +12,7 @@ When clicking on wathever movie you'd like to see, you will be redirected to a w
 
 When clicking on the genre or one of the genres of the movie, you'll be then redirected to a yet new webpage listing you different movies of that genre.
 
-09/01/2024 => Update ==> Adding the list of genres and fixing some issues with the SASS!
+01/02/2024 : new implementations!! Add of a modal to see the informations of each movies, the login function through TMDB API (with Login), and adding a WatchList and Favorite List of movies (and removing option).
 
 ### What was learned
 
